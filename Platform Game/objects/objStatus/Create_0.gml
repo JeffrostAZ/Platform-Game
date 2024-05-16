@@ -1,7 +1,15 @@
 global.status_buttons = [
-    ["Força", 15],
-    ["Velocidade", 10],
-    ["Sorte", 1]
+    ["Força", 1],
+    ["Velocidade", 1],
+    ["Sorte", 1],
+	["Vida", 1],
+    ["Energia", 1],
+    ["Defesa", 1],
+    ["Ataque", 1],
+    ["Atordoamento", 1],
+	["Envenenamento", 1],
+    ["Congelamento", 1],
+    ["Queimadura", 1]
 ];
 
 // Obtém a câmera ativa
