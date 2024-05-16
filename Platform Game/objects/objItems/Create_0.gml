@@ -1,5 +1,4 @@
 _mult = 0.1;
-
 global.items = [
     ["capacete", 1], ["óculos", 1], ["mochila", 1], 
     ["cinto", 1], ["meia", 1], ["relógio", 1], 
@@ -13,23 +12,22 @@ global.items = [
     ["gorro", 1], ["bandana", 1], ["cachecol de seda", 1]
 ];
 
+
+
 // Sorteia 5 itens únicos e armazena em global.displayed_items
-global.displayed_items = ds_list_create();
-var _all_items = ds_list_create();
-for (var i = 0; i < array_length(global.items); i++) {
-    ds_list_add(_all_items, i);
-}
+_displayed_items = ds_list_create();
 
 // Assegurando que não tentamos sortear mais itens do que disponíveis
-var _num_to_draw = min(4, ds_list_size(_all_items));
+var _num_to_draw = 4;
 
 for (var i = 0; i < _num_to_draw; i++) {
-    var _index = irandom_range(0, ds_list_size(_all_items) - 1);
-    var _item_index = _all_items[| _index];
-    ds_list_add(global.displayed_items, global.items[_item_index]);
-    ds_list_delete(_all_items, _index);
+    var _index = irandom_range(0, array_length(global.items) - 1);
+	ds_list_add(_displayed_items, _index);
+	show_debug_message(ds_list_find_value(_displayed_items, i));
 }
-ds_list_destroy(_all_items);
+
+
+
 
 
 _item_menu = -1;
