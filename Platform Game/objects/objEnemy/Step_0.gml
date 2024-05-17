@@ -30,5 +30,18 @@ if (place_meeting(x + _move_x, y, objEnemy)) {
 }
 
 #endregion
+
+#region Collision objDebris
+
+if(place_meeting(x, y, objDebris)){
+	_health -= 1;
+	instance_destroy(objDebris.id);
+	if(_health <= 0){
+		instance_destroy();	
+	}
+}
+
+#endregion
+
 x += _move_x;
 y += _move_y;

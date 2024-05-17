@@ -1,3 +1,16 @@
+enum BASEATRIBUTES {
+	FORCA,
+    VELOCIDADE,
+    SORTE,
+    VIDA,
+    ENERGIA,
+    DEFESA,
+    ATAQUE,
+	PULO,
+	LENGTH
+}
+
+
 global.status_buttons = [
     ["Força", 1],
     ["Velocidade", 1],
@@ -6,10 +19,7 @@ global.status_buttons = [
     ["Energia", 1],
     ["Defesa", 1],
     ["Ataque", 1],
-    ["Atordoamento", 1],
-	["Envenenamento", 1],
-    ["Congelamento", 1],
-    ["Queimadura", 1]
+	["Pulo", 1]
 ];
 
 // Obtém a câmera ativa

@@ -14,4 +14,3 @@ if (_shoot){
 	x = objPlayer.x + _orbit_radius * cos(_orbit_angle);
 	y = objPlayer.y + _orbit_radius * sin(_orbit_angle);
 }
-
