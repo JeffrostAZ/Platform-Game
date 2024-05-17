@@ -20,6 +20,9 @@ if (_item_menu){
 	    // Interatividade e visualização do botão
 	    if (point_in_rectangle(mouse_x, mouse_y, _button_x, _button_y, _button_x + _button_width, _button_y + _height_btn)) {
 	        draw_rectangle(_button_x, _button_y, _button_x + _button_width, _button_y + _height_btn, false);
+			
+			_selected = _i;
+			
 	        if ( global.coin > 0) {
 				if(mouse_check_button_pressed(mb_left)){
 		            global.items[_item][1] += 1;  // Aumenta o valor do item
