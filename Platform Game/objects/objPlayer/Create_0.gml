@@ -10,7 +10,8 @@ _str = 5;
 _agi = 2;
 _luk = 5;
 _jump = -15;
-_shoot_spd = 5;
+_shoot_spd = 30;
+_shoot_frequency = 5;
 
 _def = 5;
 _atk = 5;
@@ -21,3 +22,8 @@ _move_y = 0;
 _box__existence = false;
 
 _instance = 0;
+
+_shoot_countdown = 0;
+
+alarm[0] = 60 * 0.4;
+

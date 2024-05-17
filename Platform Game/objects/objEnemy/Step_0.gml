@@ -34,7 +34,8 @@ if (place_meeting(x + _move_x, y, objEnemy)) {
 #region Collision objDebris
 
 if(place_meeting(x, y, objDebris)){
-	_health -= 1;
+	audio_play_sound(sndShoot, 1, 0);
+	_health -= objPlayer._atk;
 	instance_destroy(objDebris.id);
 	if(_health <= 0){
 		instance_destroy();	

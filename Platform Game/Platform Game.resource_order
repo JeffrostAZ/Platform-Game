@@ -20,6 +20,7 @@
     {"name":"sprCollision","order":1,"path":"sprites/sprCollision/sprCollision.yy",},
     {"name":"objCollision","order":1,"path":"objects/objCollision/objCollision.yy",},
     {"name":"objItems","order":4,"path":"objects/objItems/objItems.yy",},
+    {"name":"sndFootsteps","order":1,"path":"sounds/sndFootsteps/sndFootsteps.yy",},
     {"name":"sprEnemy","order":5,"path":"sprites/sprEnemy/sprEnemy.yy",},
     {"name":"objEnemySpawner","order":9,"path":"objects/objEnemySpawner/objEnemySpawner.yy",},
     {"name":"sprBox","order":3,"path":"sprites/sprBox/sprBox.yy",},
