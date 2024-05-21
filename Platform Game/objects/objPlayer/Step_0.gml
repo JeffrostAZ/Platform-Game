@@ -13,7 +13,7 @@ _move_x = _move * _agi;
 
 _move_y += _grv;
 
-_shoot_countdown += 1;
+_shoot_countdown -= 1;
 
 if(place_meeting(x, y+1, objCollision) && _key_up){
 	_move_y = _jump;
@@ -39,7 +39,7 @@ if (place_meeting(x, y + _move_y, objCollision)) {
 
 #region Shoot
 
-if(mouse_check_button(mb_left) && _shoot_countdown >= _shoot_frequency){
+if(mouse_check_button(mb_left) && _shoot_countdown <= _shoot_frequency){
 	var _inst = instance_create_depth(x, y, depth, objDebris);
 	var _dir = direction;
 	var _point_dir = point_direction(x,y, mouse_x, mouse_y);
@@ -47,7 +47,7 @@ if(mouse_check_button(mb_left) && _shoot_countdown >= _shoot_frequency){
 	_inst._shoot = true;
 	_inst.direction = _dir;
 	_inst.speed = _shoot_spd;
-	_shoot_countdown = 0;
+	_shoot_countdown = 100;
 }
 
 #endregion

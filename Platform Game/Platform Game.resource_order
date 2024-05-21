@@ -46,5 +46,6 @@
     {"name":"Sprite3","order":2,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"objHud","order":2,"path":"objects/objHud/objHud.yy",},
     {"name":"objController","order":1,"path":"objects/objController/objController.yy",},
+    {"name":"fnt_status","order":1,"path":"fonts/fnt_status/fnt_status.yy",},
   ],
 }

@@ -8,12 +8,12 @@ _str = 2;
 _agi = 3;
 _luk = 5;
 _jump = -10;
-_shoot_spd = 3;
-_shoot_frequency = 5;
 _def = 5;
 _atk = 5;
+_shoot_spd = _luk * _agi;
+_shoot_frequency = _agi * 20;
 
-_shoot_countdown = 0;
+_shoot_countdown = 100;
 
 _move_x = 0;
 _move_y = 0; 
