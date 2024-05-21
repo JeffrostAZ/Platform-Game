@@ -2,6 +2,8 @@
 _move_x = sign(objPlayer.x - x);
 _move_y += _grv;
 
+_shoot_countdown += 1;
+
 #region Collision objCollision
 // Verifica a colisão com as paredes (horizontal)
 if (place_meeting(x + _move_x, y, objCollision)) {
@@ -43,8 +45,6 @@ if(place_meeting(x, y, objDebris)){
 }
 
 #endregion
-
-_shoot_countdown += 1;
 
 #region Shoot
 
