@@ -40,6 +40,7 @@ if(place_meeting(x, y, objDebris)){
 	_health -= objPlayer._atk;
 	instance_destroy(objDebris.id);
 	if(_health <= 0){
+		global.exp += 10;
 		instance_destroy();	
 	}
 }

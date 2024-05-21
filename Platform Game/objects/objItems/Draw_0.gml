@@ -6,7 +6,7 @@ var _pos_x = (room_width - _button_width * _num_buttons) / 2;  // Centraliza os 
 var _height_btn = 350;
 var _button_y = room_height / 2 - (_num_buttons * button_spacing) / 2;  // Centraliza verticalmente baseado no número de botões
 
-if (_item_menu){
+if (objWorldGenerate._item_menu){
 	
 	for (var _i = 0; _i < _num_buttons; _i++) {
 	    // Coordenadas do botão

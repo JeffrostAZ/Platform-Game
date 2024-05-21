@@ -103,6 +103,4 @@ for (var i = 0; i < _num_to_draw; i++) {
 	ds_list_add(_displayed_items, _index);
 }
 
-_item_menu = -1;
-
 button_spacing = 50;

@@ -16,7 +16,7 @@ _move_y += _grv;
 _shoot_countdown -= 1;
 
 if(place_meeting(x, y+1, objCollision) && _key_up){
-	_move_y = _jump;
+	_move_y = _jump * -1;
 }
 	
 #region Collision objCollision
@@ -55,7 +55,7 @@ if(mouse_check_button(mb_left) && _shoot_countdown <= _shoot_frequency){
 #region Menu
 
 if(keyboard_check_pressed(vk_escape)){
-	objItems._item_menu *= -1;	
+	objWorldGenerate._item_menu *= -1;	
 }
 
 #endregion

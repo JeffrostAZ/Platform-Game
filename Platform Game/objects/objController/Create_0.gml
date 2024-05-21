@@ -7,6 +7,8 @@ instance_create_layer(0, 0, "Instances", objItems);
 
 instance_create_layer(0, 0, "Instances", objEnemySpawner);
 
+instance_create_layer(0, 0, "Instances", objWorldGenerate);
+
 global.coin = 100;
 
 _rocket_fuel = 1000;

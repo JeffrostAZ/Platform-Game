@@ -1,5 +1,6 @@
-randomize();
+global.level = 0;
+global.exp  = 0;
 
-_up_block = 0;
-_down_block = 0;
-_mid_block = 0;
+_exp_level_needs = 50;
+
+_item_menu = -1;
