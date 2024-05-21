@@ -60,5 +60,19 @@ if(keyboard_check_pressed(vk_escape)){
 
 #endregion
 
+#region Animation
+
+if(_key_left){
+	_animation -= 0.2;
+	_idle = _move_x;
+} else if(_key_right){
+	_animation += 0.2;
+	_idle = _move_x;
+} else {
+	_animation = 0;
+}
+
+#endregion
+
 x += _move_x;
 y += _move_y;

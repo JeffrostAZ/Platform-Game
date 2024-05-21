@@ -44,5 +44,22 @@ if(place_meeting(x, y, objDebris)){
 
 #endregion
 
+_shoot_countdown += 1;
+
+#region Shoot
+
+if(_shoot_countdown > _shot_limit){
+	var _inst = instance_create_depth(x, y, depth, objFragment);
+	var _dir = direction;
+	var _point_dir = point_direction(x,y, objPlayer.x, objPlayer.y);
+	_dir = _point_dir;
+	_inst.direction = _dir;
+	_inst.speed = _shoot_spd;
+	_shoot_countdown = 0;
+}
+
+#endregion
+
+
 x += _move_x;
 y += _move_y;

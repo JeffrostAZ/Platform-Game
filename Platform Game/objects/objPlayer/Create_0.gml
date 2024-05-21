@@ -27,3 +27,5 @@ _shoot_countdown = 0;
 
 alarm[0] = 60 * 0.4;
 
+_animation = 0;
+_idle = 1;
