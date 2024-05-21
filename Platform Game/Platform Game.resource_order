@@ -39,6 +39,7 @@
     {"name":"rm_menu","order":1,"path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"sprEnemyYellow","order":5,"path":"sprites/sprEnemyYellow/sprEnemyYellow.yy",},
     {"name":"sprEnemyRedWhite","order":4,"path":"sprites/sprEnemyRedWhite/sprEnemyRedWhite.yy",},
+    {"name":"sprGround","order":16,"path":"sprites/sprGround/sprGround.yy",},
     {"name":"sprEnemyGreen","order":1,"path":"sprites/sprEnemyGreen/sprEnemyGreen.yy",},
     {"name":"sprDebris","order":4,"path":"sprites/sprDebris/sprDebris.yy",},
     {"name":"sprScreen","order":12,"path":"sprites/sprScreen/sprScreen.yy",},

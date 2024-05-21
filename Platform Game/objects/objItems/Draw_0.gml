@@ -13,26 +13,26 @@ if (_item_menu){
 	    var _button_x = _pos_x + _i * _button_width;
 		
 		var _item = ds_list_find_value(_displayed_items, _i);
-
+		
 	    // Desenho do texto do botão
 	    draw_text(_button_x + (_button_width / 2) - 60, _button_y + 10, global.items[_item][0] + ": " + string(global.items[_item][1]));
 
 	    // Interatividade e visualização do botão
 	    if (point_in_rectangle(mouse_x, mouse_y, _button_x, _button_y, _button_x + _button_width, _button_y + _height_btn)) {
-	        draw_rectangle(_button_x, _button_y, _button_x + _button_width, _button_y + _height_btn, false);
-			
-			_selected = _i;
-			
-	        if ( global.coin > 0) {
-				if(mouse_check_button_pressed(mb_left)){
-		            global.items[_item][1] += 1;  // Aumenta o valor do item
-					global.coin--;
-				}
-	        } else {
-				global.coin = 0;
-			}
-	    } else {
-	        draw_rectangle(_button_x, _button_y, _button_x + _button_width, _button_y + _height_btn, true);
+	       
+		   draw_rectangle(_button_x, _button_y, _button_x + _button_width, _button_y + _height_btn, false);
+		///Seleciona o item clicado
+	       if (mouse_check_button_pressed(mb_left)){
+				_selected = _i;
+	        }
+
 	    }
+		///Mantém o item selecionado
+		if(_selected == _i){
+			draw_set_color(c_white);
+            draw_rectangle(_button_x, _button_y, _button_x + _button_width, _button_y + _height_btn, false); // Desenha um retângulo sem preenchimento
+        } else {
+            draw_rectangle(_button_x, _button_y, _button_x + _button_width, _button_y + _height_btn, true); // Desenha um retângulo preenchido
+		}
 	}
 }

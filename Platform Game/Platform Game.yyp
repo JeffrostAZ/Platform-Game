@@ -59,6 +59,7 @@
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"sprEnemyYellow","path":"sprites/sprEnemyYellow/sprEnemyYellow.yy",},},
     {"id":{"name":"sprEnemyRedWhite","path":"sprites/sprEnemyRedWhite/sprEnemyRedWhite.yy",},},
+    {"id":{"name":"sprGround","path":"sprites/sprGround/sprGround.yy",},},
     {"id":{"name":"objDebris","path":"objects/objDebris/objDebris.yy",},},
     {"id":{"name":"tls_building","path":"tilesets/tls_building/tls_building.yy",},},
     {"id":{"name":"sprEnemyGreen","path":"sprites/sprEnemyGreen/sprEnemyGreen.yy",},},
