@@ -6,7 +6,9 @@ var _pos_x = (room_width - _button_width * _num_buttons) / 2;  // Centraliza os 
 var _height_btn = 350;
 var _button_y = room_height / 2 - (_num_buttons * button_spacing) / 2;  // Centraliza verticalmente baseado no número de botões
 
-if (objWorldGenerate._item_menu){
+if (global._item_menu){
+	
+	
 	
 	for (var _i = 0; _i < _num_buttons; _i++) {
 	    // Coordenadas do botão
@@ -35,4 +37,16 @@ if (objWorldGenerate._item_menu){
             draw_rectangle(_button_x, _button_y, _button_x + _button_width, _button_y + _height_btn, true); // Desenha um retângulo preenchido
 		}
 	}
+	
+	 if (point_in_rectangle(mouse_x, mouse_y, room_width / 2 - 75, 850, room_width / 2 + 75, 900)) {
+			draw_rectangle(room_width / 2 - 75, 850, room_width / 2 + 75, 900, false);
+			if(mouse_check_button_pressed(mb_left)){
+				global._item_menu = -1;
+				room_goto(rm_world);
+				objPlayer.x = room_width / 2;
+				objPlayer.y = room_width / 5;
+			}
+	 } else {
+			draw_rectangle(room_width / 2 - 75, 850, room_width / 2 + 75, 900, true);
+	 }	
 }

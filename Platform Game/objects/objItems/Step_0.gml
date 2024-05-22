@@ -7,12 +7,11 @@ if(global.coin > 0){
 		case 0:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 			
 	break;
@@ -20,12 +19,11 @@ if(global.coin > 0){
 		case 1:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -33,12 +31,11 @@ if(global.coin > 0){
 		case 2:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -46,12 +43,11 @@ if(global.coin > 0){
 		case 3:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 
@@ -60,12 +56,11 @@ if(global.coin > 0){
 		case 4:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -73,12 +68,11 @@ if(global.coin > 0){
 		case 5:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -86,12 +80,11 @@ if(global.coin > 0){
 		case 6:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -99,12 +92,11 @@ if(global.coin > 0){
 		case 7:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -112,12 +104,11 @@ if(global.coin > 0){
 		case 8:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -125,12 +116,11 @@ if(global.coin > 0){
 		case 9:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -138,12 +128,11 @@ if(global.coin > 0){
 		case 10:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -151,12 +140,11 @@ if(global.coin > 0){
 		case 11:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -164,12 +152,11 @@ if(global.coin > 0){
 		case 12:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -177,12 +164,11 @@ if(global.coin > 0){
 		case 13:
 			objPlayer._str = global.items[_item][ATRIBUTES.FORCA];
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objPlayer._luk = global.items[_item][ATRIBUTES.VELOCIDADE];			
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -192,10 +178,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -205,10 +189,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -218,10 +200,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -231,10 +211,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -244,10 +222,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -257,10 +233,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -270,10 +244,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -283,10 +255,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -296,10 +266,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -309,10 +277,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -321,10 +287,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -333,10 +297,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -345,10 +307,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -357,10 +317,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -369,10 +327,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -381,10 +337,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;
@@ -393,10 +347,8 @@ if(global.coin > 0){
 			objPlayer._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
 			objPlayer._atk = global.items[_item][ATRIBUTES.ATAQUE];
 			objPlayer._def = global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objPlayer._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objPlayer._jump = global.items[_item][ATRIBUTES.FORCA];
 			_last_selected = _selected;
 
 	break;

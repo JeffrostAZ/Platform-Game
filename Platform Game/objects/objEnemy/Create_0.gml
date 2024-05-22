@@ -1,13 +1,16 @@
+instance_create_depth(x, y, depth, objAbilities);
+
+
 _grv = 0.9;
 
 _sprite_enemy = sprEnemyRed;
 
-_health = 50;
+_health = global.level * (global.exp / 100) + 10;
 
 _move_x = 0;
 _move_y = 0;
 
-_speed = 2;
+_speed = 2 + (global.level / 10);
 
 _shoot_countdown = 0;
 _shot_limit = 75;

@@ -52,14 +52,6 @@ if(mouse_check_button(mb_left) && _shoot_countdown <= _shoot_frequency){
 
 #endregion
 
-#region Menu
-
-if(keyboard_check_pressed(vk_escape)){
-	objWorldGenerate._item_menu *= -1;	
-}
-
-#endregion
-
 #region Animation
 
 if(_key_left){

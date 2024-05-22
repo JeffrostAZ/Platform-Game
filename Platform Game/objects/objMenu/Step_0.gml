@@ -34,7 +34,7 @@ for (var _i = 0; _i < ds_list_size(_menu_options); _i++) {
 					case 2: room_goto(rm_menu); break; //Opções
 				    case 3: game_end(); break;         // Sair
 				}
-			}
+			} 
         break; // Sai do loop assim que a opção é selecionada
     }
 }

@@ -28,9 +28,10 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Shaders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds","folderPath":"folders/Sounds.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy","folderPath":"folders/Sprites/Enemy.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Weapons","folderPath":"folders/Sprites/Weapons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy","folderPath":"folders/Sprites/Enemy.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -40,7 +41,10 @@
   },
   "resources": [
     {"id":{"name":"sprFragment","path":"sprites/sprFragment/sprFragment.yy",},},
+    {"id":{"name":"sprVegetation","path":"sprites/sprVegetation/sprVegetation.yy",},},
     {"id":{"name":"sprBackgroundScreen","path":"sprites/sprBackgroundScreen/sprBackgroundScreen.yy",},},
+    {"id":{"name":"spr_spearl_01","path":"sprites/spr_spearl_01/spr_spearl_01.yy",},},
+    {"id":{"name":"objAbilities","path":"objects/objAbilities/objAbilities.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
     {"id":{"name":"sprCollision","path":"sprites/sprCollision/sprCollision.yy",},},
     {"id":{"name":"objCollision","path":"objects/objCollision/objCollision.yy",},},
@@ -59,6 +63,7 @@
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"sprEnemyYellow","path":"sprites/sprEnemyYellow/sprEnemyYellow.yy",},},
     {"id":{"name":"sprEnemyRedWhite","path":"sprites/sprEnemyRedWhite/sprEnemyRedWhite.yy",},},
+    {"id":{"name":"rm_build","path":"rooms/rm_build/rm_build.yy",},},
     {"id":{"name":"sprGround","path":"sprites/sprGround/sprGround.yy",},},
     {"id":{"name":"objDebris","path":"objects/objDebris/objDebris.yy",},},
     {"id":{"name":"tls_building","path":"tilesets/tls_building/tls_building.yy",},},
@@ -78,6 +83,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_world","path":"rooms/rm_world/rm_world.yy",},},
+    {"roomId":{"name":"rm_build","path":"rooms/rm_build/rm_build.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

@@ -1,4 +1,4 @@
-
+instance_create_layer(0, 0, "Instances", objAbilities);
 
 _grv = 0.9;
 
@@ -11,9 +11,9 @@ _agi = 3;
 _luk = 5;
 _jump = -1;
 _def = 5;
-_atk = 5;
+_atk = 15;
 _shoot_spd = _luk * _agi;
-_shoot_frequency = _agi * 20;
+_shoot_frequency = _agi * _atk;
 
 _shoot_countdown = 100;
 
