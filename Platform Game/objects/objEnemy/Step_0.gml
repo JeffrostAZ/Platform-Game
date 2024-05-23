@@ -1,5 +1,5 @@
 //move_towards_point(objPlayer.x, y, 3);
-_move_x = sign(objPlayer.x - x);
+_move_x = sign(objController._pos_x - x);
 _move_y += _grv;
 
 _shoot_countdown += 1;
@@ -37,7 +37,7 @@ if (place_meeting(x, y + _move_y, objCollision)) {
 
 if(place_meeting(x, y, objDebris)){
 	audio_play_sound(sndShoot, 1, 0);
-	_health -= objPlayer._atk;
+	_health -= objController._atk;
 	instance_destroy(objDebris.id);
 }
 
@@ -48,7 +48,7 @@ if(place_meeting(x, y, objDebris)){
 if(_shoot_countdown > _shot_limit){
 	var _inst = instance_create_depth(x, y, depth, objFragment);
 	var _dir = direction;
-	var _point_dir = point_direction(x,y, objPlayer.x, objPlayer.y);
+	var _point_dir = point_direction(x,y, objController._pos_x, objController._pos_y);
 	_dir = _point_dir;
 	_inst.direction = _dir;
 	_inst.speed = _shoot_spd;

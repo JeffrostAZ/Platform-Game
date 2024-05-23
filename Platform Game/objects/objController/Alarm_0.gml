@@ -1,1 +1,0 @@
-instance_create_depth(objPlayer.x, objPlayer.y, depth, objDebris);

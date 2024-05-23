@@ -1,10 +1,10 @@
-x = objPlayer.x;
-y = objPlayer.y;
+x = objController._pos_x;
+y = objController._pos_y;
 
 
 // Get the position of the player
-var _player_x = objPlayer.x;
-var _player_y = objPlayer.y;
+var _player_x = objController._pos_x;
+var _player_y = objController._pos_y;
 
 // Get the position of the mouse
 var _mouse_x_pos = mouse_x;

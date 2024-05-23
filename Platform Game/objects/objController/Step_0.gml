@@ -3,16 +3,12 @@ if(keyboard_check_pressed(vk_enter)){
 }
 
 
-if(keyboard_check(vk_space) && _rocket_fuel > 10){
-	objPlayer._move_y -= 1.5;	
-	
-	
-	repeat(10){
-		var _inst = instance_create_depth(objPlayer.x, objPlayer.y, depth, objFragment);
-		var _dir = irandom_range(260, 280);
-		_inst.direction = _dir;
-		_inst.speed = 5;
-	}
-	
-	_rocket_fuel -= 1;
+switch(global._item_menu){
+	case -1:
+		instance_create_layer(room_width / 2, room_height / 2, "Instances", objPlayer);
+		instance_create_layer(0, 0, "Instances", objHud);
+		instance_create_layer(0, 0, "Instances", objEnemySpawner);
+
+		global._item_menu = 0;
+	break;
 }

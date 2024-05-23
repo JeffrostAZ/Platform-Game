@@ -5,8 +5,8 @@ var _hud_x = 20; // Posição X do HUD na tela
 var _hud_y = 20; // Posição Y do HUD na tela
 
 // Exemplo de desenho de uma barra de vida
-var _player_health = objPlayer._health; // Assume que o objeto do jogador tem uma variável de saúde chamada 'health'
-var _max_health = objPlayer._max_health;
+var _player_health = objController._health; // Assume que o objeto do jogador tem uma variável de saúde chamada 'health'
+var _max_health = objController._max_health;
 var _health_bar_width = 200;
 var _health_bar_height = 20;
 
@@ -32,7 +32,7 @@ var _exp_hud_y = 60; // Posição Y do HUD na tela
 
 // Exemplo de desenho de uma barra de vida
 var _player_exp = global.exp; // Assume que o objeto do jogador tem uma variável de saúde chamada 'health'
-var _exp_needed = objWorldGenerate._exp_level_needs; // Experiência necessária para o próximo nível
+var _exp_needed = global._exp_level_needs; // Experiência necessária para o próximo nível
 
 var _exp_bar_width = 200; // Largura total da barra de experiência
 var _exp_bar_height = 20; // Altura da barra de experiência

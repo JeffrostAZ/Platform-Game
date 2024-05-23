@@ -12,8 +12,10 @@ _luk = 5;
 _jump = -1;
 _def = 5;
 _atk = 15;
-_shoot_spd = _luk * _agi;
-_shoot_frequency = _agi * _atk;
+_shoot_spd = 10;
+_shoot_frequency = 10;
+
+_rocket_fuel = 1000;
 
 _shoot_countdown = 100;
 

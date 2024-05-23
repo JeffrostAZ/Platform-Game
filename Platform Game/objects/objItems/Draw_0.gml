@@ -43,8 +43,6 @@ if (global._item_menu){
 			if(mouse_check_button_pressed(mb_left)){
 				global._item_menu = -1;
 				room_goto(rm_world);
-				objPlayer.x = room_width / 2;
-				objPlayer.y = room_width / 5;
 			}
 	 } else {
 			draw_rectangle(room_width / 2 - 75, 850, room_width / 2 + 75, 900, true);
