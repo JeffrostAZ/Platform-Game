@@ -11,4 +11,20 @@ switch(global._item_menu){
 
 		global._item_menu = 0;
 	break;
+	
+	case 1:
+	
+		instance_create_layer(0, 0, "Instances", objItems);
+		instance_create_layer(0, 0, "Instances", objStatus);
+		
+	break;
+}
+
+if(keyboard_check_pressed(ord("1"))){
+	global.ability = 0;
+}
+
+
+if(keyboard_check_pressed(ord("2"))){
+	global.ability = 1;		
 }

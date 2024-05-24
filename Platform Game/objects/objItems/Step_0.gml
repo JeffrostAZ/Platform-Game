@@ -1,34 +1,32 @@
 var _item = ds_list_find_value(_displayed_items, _selected);
 
-if(global.coin > 0 && mouse_check_button_pressed(mb_left)){
+if(global.coin > 0 && global.buying_limit > 0 && mouse_check_button_pressed(mb_left)){
 	
 	switch(_item){
 	
 		case 0:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 			
 	break;
 	
 		case 1:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
@@ -43,22 +41,20 @@ if(global.coin > 0 && mouse_check_button_pressed(mb_left)){
 			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
 			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
 			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 3:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
@@ -66,369 +62,372 @@ if(global.coin > 0 && mouse_check_button_pressed(mb_left)){
 	break;
 	
 		case 4:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 5:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 6:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 7:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 8:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 9:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 10:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 11:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 12:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 13:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 14:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 15:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 16:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 17:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 18:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 19:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 20:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._shoot_spd = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 
 	break;
 	
 		case 21:
-			objPlayer._str += global.items[_item][ATRIBUTES.FORCA];
-			objPlayer._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-			objPlayer._luk += global.items[_item][ATRIBUTES.SORTE];			
-			objPlayer._atk += global.items[_item][ATRIBUTES.ATAQUE];
-			objPlayer._def += global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._max_health += global.items[_item][ATRIBUTES.VIDA];
-			objPlayer._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
+			
 			_last_selected = _selected;
 
 	break;
 	
 		case 22:
-			objPlayer._str += global.items[_item][ATRIBUTES.FORCA];
-			objPlayer._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-			objPlayer._luk += global.items[_item][ATRIBUTES.SORTE];			
-			objPlayer._atk += global.items[_item][ATRIBUTES.ATAQUE];
-			objPlayer._def += global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._max_health += global.items[_item][ATRIBUTES.VIDA];
-			objPlayer._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
+			
 			_last_selected = _selected;
 
 	break;
 	
 		case 23:
-			objPlayer._str += global.items[_item][ATRIBUTES.FORCA];
-			objPlayer._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-			objPlayer._luk += global.items[_item][ATRIBUTES.SORTE];			
-			objPlayer._atk += global.items[_item][ATRIBUTES.ATAQUE];
-			objPlayer._def += global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._max_health += global.items[_item][ATRIBUTES.VIDA];
-			objPlayer._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
+			
 			_last_selected = _selected;
 
 	break;
 			case 24:
-			objPlayer._str += global.items[_item][ATRIBUTES.FORCA];
-			objPlayer._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-			objPlayer._luk += global.items[_item][ATRIBUTES.SORTE];			
-			objPlayer._atk += global.items[_item][ATRIBUTES.ATAQUE];
-			objPlayer._def += global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._max_health += global.items[_item][ATRIBUTES.VIDA];
-			objPlayer._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
+			
 			_last_selected = _selected;
 
 	break;
 			case 25:
-			objPlayer._str += global.items[_item][ATRIBUTES.FORCA];
-			objPlayer._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-			objPlayer._luk += global.items[_item][ATRIBUTES.SORTE];			
-			objPlayer._atk += global.items[_item][ATRIBUTES.ATAQUE];
-			objPlayer._def += global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._max_health += global.items[_item][ATRIBUTES.VIDA];
-			objPlayer._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
+			
 			_last_selected = _selected;
 
 	break;
 			case 26:
-			objPlayer._str += global.items[_item][ATRIBUTES.FORCA];
-			objPlayer._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-			objPlayer._luk += global.items[_item][ATRIBUTES.SORTE];			
-			objPlayer._atk += global.items[_item][ATRIBUTES.ATAQUE];
-			objPlayer._def += global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._max_health += global.items[_item][ATRIBUTES.VIDA];
-			objPlayer._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
+			
 			_last_selected = _selected;
 
 	break;
 			case 27:
-			objPlayer._str += global.items[_item][ATRIBUTES.FORCA];
-			objPlayer._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-			objPlayer._luk += global.items[_item][ATRIBUTES.SORTE];			
-			objPlayer._atk += global.items[_item][ATRIBUTES.ATAQUE];
-			objPlayer._def += global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._max_health += global.items[_item][ATRIBUTES.VIDA];
-			objPlayer._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
+			
 			_last_selected = _selected;
 
 	break;
 			case 28:
-			objPlayer._str += global.items[_item][ATRIBUTES.FORCA];
-			objPlayer._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-			objPlayer._luk += global.items[_item][ATRIBUTES.SORTE];			
-			objPlayer._atk += global.items[_item][ATRIBUTES.ATAQUE];
-			objPlayer._def += global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._max_health += global.items[_item][ATRIBUTES.VIDA];
-			objPlayer._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
+			
 			_last_selected = _selected;
 
 	break;
 			case 29:
-			objPlayer._str += global.items[_item][ATRIBUTES.FORCA];
-			objPlayer._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-			objPlayer._luk += global.items[_item][ATRIBUTES.SORTE];			
-			objPlayer._atk += global.items[_item][ATRIBUTES.ATAQUE];
-			objPlayer._def += global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._max_health += global.items[_item][ATRIBUTES.VIDA];
-			objPlayer._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
+			
 			_last_selected = _selected;
 
 	break;
 			case 30:
-			objPlayer._str += global.items[_item][ATRIBUTES.FORCA];
-			objPlayer._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-			objPlayer._luk += global.items[_item][ATRIBUTES.SORTE];			
-			objPlayer._atk += global.items[_item][ATRIBUTES.ATAQUE];
-			objPlayer._def += global.items[_item][ATRIBUTES.DEFESA];
-			objPlayer._max_health += global.items[_item][ATRIBUTES.VIDA];
-			objPlayer._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
+			
 			_last_selected = _selected;
 
 	break;

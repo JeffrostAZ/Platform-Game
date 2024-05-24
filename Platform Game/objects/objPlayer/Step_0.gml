@@ -37,21 +37,6 @@ if (place_meeting(x, y + _move_y, objCollision)) {
 }
 #endregion
 
-#region Shoot
-
-if(mouse_check_button(mb_left) && _shoot_countdown <= _shoot_frequency){
-	var _inst = instance_create_depth(x, y, depth, objDebris);
-	var _dir = direction;
-	var _point_dir = point_direction(x,y, mouse_x, mouse_y);
-	_dir = _point_dir;
-	_inst._shoot = true;
-	_inst.direction = _dir;
-	_inst.speed = _shoot_spd;
-	_shoot_countdown = 100;
-}
-
-#endregion
-
 #region Animation
 
 if(_key_left){

@@ -12,7 +12,7 @@ _luk = 5;
 _jump = -1;
 _def = 5;
 _atk = 15;
-_shoot_spd = 10;
+_shoot_spd = 60;
 _shoot_frequency = 10;
 
 _rocket_fuel = 1000;

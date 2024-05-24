@@ -33,16 +33,6 @@ if (place_meeting(x, y + _move_y, objCollision)) {
 
 #endregion
 
-#region Collision objDebris
-
-if(place_meeting(x, y, objDebris)){
-	audio_play_sound(sndShoot, 1, 0);
-	_health -= objController._atk;
-	instance_destroy(objDebris.id);
-}
-
-#endregion
-
 #region Shoot
 
 if(_shoot_countdown > _shot_limit){

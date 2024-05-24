@@ -95,6 +95,9 @@ _selected = -1;
 
 _last_selected = -1;
 
+global._card_size = 0;
+global._card_alpha = 0;
+
 // Assegurando que não tentamos sortear mais itens do que disponíveis
 var _num_to_draw = 4;
 
