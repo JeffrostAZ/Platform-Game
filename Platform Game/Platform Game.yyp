@@ -94,6 +94,7 @@
     {"id":{"name":"objEnemy","path":"objects/objEnemy/objEnemy.yy",},},
     {"id":{"name":"objController","path":"objects/objController/objController.yy",},},
     {"id":{"name":"objWorldGenerate","path":"objects/objWorldGenerate/objWorldGenerate.yy",},},
+    {"id":{"name":"objDrone","path":"objects/objDrone/objDrone.yy",},},
     {"id":{"name":"fnt_status","path":"fonts/fnt_status/fnt_status.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"rm_world","path":"rooms/rm_world/rm_world.yy",},},

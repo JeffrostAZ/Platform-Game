@@ -10,6 +10,7 @@ global.exp_point_skill = 0;
 global._item_menu = -1; 
 global._exp_level_needs = 100;
 global.buying_limit = 2;
+global.upgrade = false;
 #endregion
 
 #region Player Attributes

@@ -11,6 +11,9 @@ _move_y += _grv;
 
 _shoot_countdown -= 1;
 
+var _dir = sign(mouse_x - x);
+image_xscale = _dir;
+
 #region Jumping
 
 if(place_meeting(x, y+1, objCollision) && _key_up){
@@ -39,15 +42,15 @@ if (place_meeting(x, y + _move_y, objCollision)) {
 
 #region Animation
 
-if(_key_left){
-	_animation -= 0.2;
-	_idle = _move_x;
-} else if(_key_right){
-	_animation += 0.2;
-	_idle = _move_x;
-} else {
-	_animation = 0;
-}
+//if(_key_left){
+//	_animation -= 0.2;
+//	_idle = _move_x;
+//} else if(_key_right){
+//	_animation += 0.2;
+//	_idle = _move_x;
+//} else {
+//	_animation = 0;
+//}
 
 #endregion
 

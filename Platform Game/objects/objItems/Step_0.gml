@@ -33,14 +33,14 @@ if(global.coin > 0 && global.buying_limit > 0 && mouse_check_button_pressed(mb_l
 	break;
 	
 		case 2:
-			objController._str = global.items[_item][ATRIBUTES.FORCA];
-			objController._agi = global.items[_item][ATRIBUTES.VELOCIDADE];
-			objController._luk = global.items[_item][ATRIBUTES.SORTE];			
-			objController._atk = global.items[_item][ATRIBUTES.ATAQUE];
-			objController._def = global.items[_item][ATRIBUTES.DEFESA];
-			objController._max_health = global.items[_item][ATRIBUTES.VIDA];
-			objController._energy = global.items[_item][ATRIBUTES.ENERGIA];
-			objController._shoot_frequency = global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._str += global.items[_item][ATRIBUTES.FORCA];
+			objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
+			objController._luk += global.items[_item][ATRIBUTES.SORTE];			
+			objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
+			objController._def += global.items[_item][ATRIBUTES.DEFESA];
+			objController._max_health += global.items[_item][ATRIBUTES.VIDA];
+			objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
+			objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 			_last_selected = _selected;
 

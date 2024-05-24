@@ -32,6 +32,7 @@ if (global._item_menu){
 		
         // Interatividade e visualização do botão
         if (point_in_rectangle(mouse_x, mouse_y, _button_x, _button_y, _button_x + _button_width, _button_y + _height_btn + 100)) {
+			_selected = _i;
             global._card_size[_i] = min(global._card_size[_i] + 0.05, 0.05);
             global._card_alpha[_i] = min(global._card_alpha[_i] + 0.5, 0.05);
             
