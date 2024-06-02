@@ -35,6 +35,7 @@ if (global._item_menu){
 			
 			if(mouse_check_button_pressed(mb_left)){
 				_selected = _i;
+				global.upgrade = true;
 			}
 			
 			
