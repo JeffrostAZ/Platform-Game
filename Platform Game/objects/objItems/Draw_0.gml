@@ -32,14 +32,15 @@ if (global._item_menu){
 		
         // Interatividade e visualização do botão
         if (point_in_rectangle(mouse_x, mouse_y, _button_x, _button_y, _button_x + _button_width, _button_y + _height_btn + 100)) {
-			_selected = _i;
+			
+			if(mouse_check_button_pressed(mb_left)){
+				_selected = _i;
+			}
+			
+			
             global._card_size[_i] = min(global._card_size[_i] + 0.05, 0.05);
             global._card_alpha[_i] = min(global._card_alpha[_i] + 0.5, 0.05);
             
-            // Seleciona o item clicado
-            if (mouse_check_button_pressed(mb_left)){
-				global.buying_limit -= 1;
-            }
         } else {
             global._card_size[_i] = max(global._card_size[_i] - 0.05, 0);
             global._card_alpha[_i] = max(global._card_alpha[_i] - 0.5, 0);
@@ -61,7 +62,9 @@ if (global._item_menu){
         if(mouse_check_button_pressed(mb_left)){
             global._item_menu = -1;
 			global.buying_limit = 2;
-            room_goto(rm_world);
+			global.coin -= global.items[_selected][ATRIBUTES.VALUE];
+			_selected = -1;
+            room_goto(rm_world_01);
         }
     } else {
         draw_sprite(spr_status_btn_02, 0, room_width / 2, room_height - 150);

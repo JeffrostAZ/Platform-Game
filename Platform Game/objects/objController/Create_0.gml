@@ -1,16 +1,42 @@
 // No evento Create do objeto controlador
 #region Global Variables
-global.items = 0;
+global.items = [];
 global.ability = 0;
-global.status_buttons = 0;
-global.coin = 100;
-global.level = 0;
+global.status_buttons = [];
+global.coin = 200;
+global.level = 1;
 global.exp  = 0;
-global.exp_point_skill = 0;
+global.exp_point_skill = 5;
 global._item_menu = -1; 
 global._exp_level_needs = 100;
 global.buying_limit = 2;
 global.upgrade = false;
+global.map = 4
+global.change_world = -1;
+#endregion
+
+#region Status Attributes
+
+_max_health_status = 0;
+_str_status = 0;
+_agi_status = 0;
+_luk_status = 0;
+_def_status = 0;
+_atk_status = 0;
+_shoot_frequency_status = 0;
+
+#endregion
+
+#region Item Status Attributes
+
+_max_health_item_status = 0;
+_str_item_status = 0;
+_agi_item_status = 0;
+_luk_item_status = 0;
+_def_item_status = 0;
+_atk_item_status = 0;
+_shoot_frequency_item_status = 0;
+
 #endregion
 
 #region Player Attributes
@@ -29,6 +55,8 @@ _shoot_frequency = 10;
 _pos_x = 0;
 _pos_y = 0;
 #endregion
+
+
 
 instance_create_layer(0, 0, "Instances", objStatus);
 

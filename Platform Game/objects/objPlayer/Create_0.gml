@@ -2,6 +2,10 @@ instance_create_layer(0, 0, "Instances", objAbilities);
 
 _grv = 0.9;
 
+
+
+#region Attributes
+
 _health = 10;
 _max_health = 10;
 _energy = 10;
@@ -14,6 +18,8 @@ _def = 5;
 _atk = 15;
 _shoot_spd = 60;
 _shoot_frequency = 10;
+
+#endregion
 
 _rocket_fuel = 1000;
 

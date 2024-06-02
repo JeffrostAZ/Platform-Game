@@ -18,27 +18,27 @@ if (global._item_menu){
             if (mouse_check_button_pressed(mb_left) && global.exp_point_skill > 0) {
                 switch(_i){
                     case 0:
-                        objController._str += 1;
+                        objController._str_status += 1;
                         global.exp_point_skill -= 1;
                         break;
                     case 1:
-                        objController._agi += 1;
+                        objController._agi_status += 1;
                         global.exp_point_skill -= 1;                        
                         break;
                     case 2:
-                        objController._luk += 1;
+                        objController._luk_status += 1;
                         global.exp_point_skill -= 1;
                         break;
                     case 3:
-                        objController._def += 1;
+                        objController._def_status += 1;
                         global.exp_point_skill -= 1;
                         break;
                     case 4:
-                        objController._atk += 1;
+                        objController._atk_status += 1;
                         global.exp_point_skill -= 1;
                         break;
                     case 5:
-                        objController._shoot_frequency += 10;
+                        objController._shoot_frequency_status += 1;
                         global.exp_point_skill -= 1;
                         break;                    
                 }
@@ -55,11 +55,11 @@ if (global._item_menu){
         draw_text(_button_x + 25, _button_y_position + 25, _status[_i][0]);
         var _button_value_x = _get_camera_x + 175; // Posição X do valor ajustada para acompanhar a câmera
 		
-        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 0 * button_spacing + _y_text, string(objController._str));
-        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 1 * button_spacing + _y_text, string(objController._agi));
-        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 2 * button_spacing + _y_text, string(objController._luk));
-        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 3 * button_spacing + _y_text, string(objController._def));
-        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 4 * button_spacing + _y_text, string(objController._atk));
-        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 5 * button_spacing + _y_text, string(objController._shoot_frequency));
+        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 0 * button_spacing + _y_text, string(objController._str_status));
+        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 1 * button_spacing + _y_text, string(objController._agi_status));
+        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 2 * button_spacing + _y_text, string(objController._luk_status));
+        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 3 * button_spacing + _y_text, string(objController._def_status));
+        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 4 * button_spacing + _y_text, string(objController._atk_status));
+        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 5 * button_spacing + _y_text, string(objController._shoot_frequency_status));
     }
 }

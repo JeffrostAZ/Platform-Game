@@ -1,4 +1,4 @@
-if(keyboard_check_pressed(vk_enter)){
+if(keyboard_check_pressed(ord("R"))){
 	game_restart();	
 }
 
@@ -36,3 +36,52 @@ if(keyboard_check_pressed(ord("2"))){
 if(keyboard_check_pressed(ord("3"))){
 	global.ability = 2;	
 }
+	
+	
+	
+#region World Generation
+
+
+//if(keyboard_check_pressed(vk_control)){
+//	global.change_world = 1;
+//	var _map = irandom(global.map);
+	
+//	switch(_map){
+//		case 0:
+		
+//		room_goto(rm_world_01);
+		
+//		break;
+		
+//		case 1:
+		
+//		room_goto(rm_world_02);
+		
+//		break;
+		
+//		case 2:
+		
+//		room_goto(rm_world_03);
+		
+//		break;
+		
+//		case 3:
+		
+//		room_goto(rm_world_04);
+		
+//		break;
+		
+//		case 4:
+		
+//		room_goto(rm_world_05);
+		
+//		break;
+//	}
+	
+//}
+
+//if(keyboard_check_released(vk_control)){
+//	global.change_world = -1;	
+//}
+
+#endregion

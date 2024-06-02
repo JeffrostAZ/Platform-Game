@@ -61,17 +61,18 @@ objController._pos_y = y;
 
 //UPDATE VALUES
 _health = objController._health;
-_max_health = objController._max_health;
+_max_health = objController._max_health_status + objController._max_health_item_status;
 _energy = objController._energy;
 _max_energy = objController._max_energy;
-_str = objController._str;
-_agi = objController._agi;
-_luk = objController._luk;
+_str = objController._str + objController._str_item_status;
+_agi = objController._agi + objController._agi_item_status;
+_luk = objController._luk + objController._luk_item_status;
 _jump = objController._jump;
-_def = objController._def;
-_atk = objController._atk;
+_def = objController._def + objController._def_item_status;
+_atk = objController._atk + objController._atk_item_status;
 _shoot_spd = objController._shoot_spd;
-_shoot_frequency = objController._shoot_frequency;
+_shoot_frequency = objController._shoot_frequency + objController._shoot_frequency_item_status;
+
 #endregion
 
 #region Jetpack
@@ -81,7 +82,7 @@ if(keyboard_check(vk_space) && _rocket_fuel > 10){
 	_move_y -= 1.5;	
 	
 	repeat(10){
-		var _inst = instance_create_depth(x, y, depth, objFragment);
+		var _inst = instance_create_depth(x, y, depth, objSteam);
 		var _dir = irandom_range(260, 280);
 		_inst.direction = _dir;
 		_inst.speed = 5;
@@ -92,6 +93,17 @@ if(keyboard_check(vk_space) && _rocket_fuel > 10){
 
 #endregion
 
+#region Death System
+
+if(place_meeting(x, y, objFragment)){
+	objController._health -= 1;	
+}
+
+if(_health <= 0){
+	game_restart();	
+}
+
+#endregion
 
 x += _move_x;
 y += _move_y;

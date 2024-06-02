@@ -30,7 +30,7 @@ for (var _i = 0; _i < ds_list_size(_menu_options); _i++) {
         _selected_option = _i;
 			if (mouse_check_button_pressed(mb_left)) {
 				switch (_selected_option) {
-				    case 0: room_goto(rm_world); break; // Novo jogo
+				    case 0: room_goto(rm_world_01); break; // Novo jogo
 					case 2: room_goto(rm_config); break; //Opções
 				    case 3: game_end(); break;         // Sair
 				}
@@ -43,7 +43,7 @@ for (var _i = 0; _i < ds_list_size(_menu_options); _i++) {
 // Executar ação com base na opção selecionada (teclado ou mouse)
 if (keyboard_check_pressed(vk_enter)) {
     switch (_selected_option) {
-        case 0: room_goto(rm_world); break; // Novo jogo
+        case 0: room_goto(rm_world_01); break; // Novo jogo
 		case 2: room_goto(rm_config); break; //Opções
         case 3: game_end(); break;         // Sair
     }

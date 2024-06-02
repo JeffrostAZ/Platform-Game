@@ -1,17 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objDrone",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-  ],
+  "name": "objSteam",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Gun",
-    "path": "folders/Objects/Gun.yy",
+    "name": "Misc",
+    "path": "folders/Objects/Misc.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_cannon",
-    "path": "sprites/spr_cannon/spr_cannon.yy",
+    "name": "sprFragment",
+    "path": "sprites/sprFragment/sprFragment.yy",
   },
   "spriteMaskId": null,
   "visible": true,

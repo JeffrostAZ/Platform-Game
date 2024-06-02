@@ -1,6 +1,6 @@
 _countdown -= 1;
 
-if(room == rm_world) && _countdown <= 0{
+if(room == rm_world_01) && _countdown <= 0{
 
 	// No evento Alarm[0] de objEnemySpawner
 	var _side = choose(-1, 1);  // Escolhe de qual lado o inimigo aparecerá (-1 para esquerda, 1 para direita)

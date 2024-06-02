@@ -35,7 +35,9 @@ if (place_meeting(x, y + _move_y, objCollision)) {
 
 #region Shoot
 
-if(_shoot_countdown > _shot_limit){
+var _dist = point_distance(x, y, objController._pos_x, objController._pos_y);
+
+if(_shoot_countdown > _shot_limit && _dist <= 500){
 	var _inst = instance_create_depth(x, y, depth, objFragment);
 	var _dir = direction;
 	var _point_dir = point_direction(x,y, objController._pos_x, objController._pos_y);
@@ -50,6 +52,7 @@ if(_shoot_countdown > _shot_limit){
 
 if(_health <= 0){
 	global.exp += 10 * (global.level + 2);
+	global.coin += 5 * global.level;
 	instance_destroy();
 }
 
