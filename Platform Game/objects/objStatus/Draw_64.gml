@@ -53,7 +53,7 @@ if (global._item_menu){
 		
         // Desenha o texto do botão
         draw_text(_button_x + 25, _button_y_position + 25, _status[_i][0]);
-        var _button_value_x = _get_camera_x + 175; // Posição X do valor ajustada para acompanhar a câmera
+        var _button_value_x = _get_camera_x + 175; // Posição X do valor ajustada para acompanhar a câmera 
 		
         draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 0 * button_spacing + _y_text, string(objController._str_status));
         draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 1 * button_spacing + _y_text, string(objController._agi_status));

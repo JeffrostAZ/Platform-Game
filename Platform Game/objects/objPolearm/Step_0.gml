@@ -6,6 +6,7 @@
 var _dir = sign(mouse_x - x);
 image_xscale = _dir;
 
+
 _countdown -= 1;
 
 if(place_meeting(x, y, objEnemy) && _countdown <= 0){
@@ -41,6 +42,7 @@ if (_animating) {
 
 // Verifica se o mouse foi clicado e se o objeto ainda não foi lançado
 if (mouse_check_button_pressed(mb_left) && !_launched) {
+
     // Calcula a direção em relação ao mouse
     var _point_dir = point_direction(x, y, mouse_x, mouse_y);
     
@@ -62,7 +64,7 @@ if (_launched) {
     var _blade_y = y + lengthdir_y(sprite_height, image_angle);
     
     // Cria um objeto na posição da lâmina se a distância percorrida for suficiente
-    _distance_traveled += speed;
+    _distance_traveled += speed * _dir;
     if (_distance_traveled >= _create_interval) {
         instance_create_layer(_blade_x, _blade_y, "Instances", objFragment); // Substitua "Instances" pelo nome da camada e "obj_trail" pelo nome do objeto a ser criado
         _distance_traveled = 0; // Reseta a distância percorrida

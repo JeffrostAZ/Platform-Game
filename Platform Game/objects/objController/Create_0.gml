@@ -1,4 +1,9 @@
 // No evento Create do objeto controlador
+_size = 0;
+_noise = 0;
+_room_width = 1920;
+_room_growth = 0;
+
 #region Global Variables
 global.items = [];
 global.ability = 0;
@@ -8,12 +13,14 @@ global.level = 1;
 global.exp  = 0;
 global.exp_point_skill = 5;
 global._item_menu = -1; 
-global._exp_level_needs = 100;
+global._exp_level_needs = 300;
 global.buying_limit = 2;
 global.upgrade = false;
 global.map = 4
 global.change_world = -1;
 #endregion
+
+
 
 #region Status Attributes
 
@@ -62,4 +69,7 @@ instance_create_layer(0, 0, "Instances", objStatus);
 
 instance_create_layer(0, 0, "Instances", objItems);
 
-instance_create_layer(0, 0, "Instances", objWorldGenerate);
+
+function _generation(){
+		
+}

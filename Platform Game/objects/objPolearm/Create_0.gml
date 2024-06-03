@@ -4,7 +4,7 @@ _sprite = spr_spearl_01;
 
 // Variáveis de controle
 _animating = false;  // Indica se a animação está ocorrendo
-_start_angle = 359;  // Ângulo inicial (de cima)
+_start_angle = 180;  // Ângulo inicial (de cima)
 _end_angle = 0;      // Ângulo final (para baixo)
 _animation_speed = 25;  // Velocidade de rotação
 

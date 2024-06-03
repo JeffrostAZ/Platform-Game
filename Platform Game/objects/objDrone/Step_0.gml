@@ -25,8 +25,8 @@ if (_nearest_enemy != noone && _nearest_dist < 500) {  // 300 é a distância de
 
 // Comportamento baseado no estado atual
 if (_state == "rondar") {
-	if(_time_since_last_move >= 50){
-		var _pos_x = irandom_range(-50, 50);
+	if(_time_since_last_move >= 100){
+		var _pos_x = irandom_range(-600, 600);
 		var _pos_y = irandom_range(100, 200);
 		
 		move_towards_point(objController._pos_x + _pos_x, objController._pos_y - _pos_y, 1);

@@ -30,6 +30,18 @@ if (global._item_menu){
 		draw_set_color(c_yellow);
 		draw_text(_button_x + (_button_width / 2) - 25, _button_y - 35, string(global.items[_item][1]) + string("$"));
 		
+		draw_set_color(c_black);
+		draw_text(_button_x + 55, 700, "Strength");
+		draw_text(_button_x + 55, 730, "Agility");
+		draw_text(_button_x + 55, 760, "Health");
+		draw_text(_button_x + 55, 790, "Damage");
+		
+		draw_set_color(c_red);
+		draw_text(_button_x + 200, 700, global.items[_item][ATRIBUTES.FORCA]);
+		draw_text(_button_x + 200, 730, global.items[_item][ATRIBUTES.VELOCIDADE]);
+		draw_text(_button_x + 200, 760, global.items[_item][ATRIBUTES.VIDA]);
+		draw_text(_button_x + 200, 790, global.items[_item][ATRIBUTES.ATAQUE]);
+		
         // Interatividade e visualização do botão
         if (point_in_rectangle(mouse_x, mouse_y, _button_x, _button_y, _button_x + _button_width, _button_y + _height_btn + 100)) {
 			
@@ -62,8 +74,10 @@ if (global._item_menu){
 		draw_sprite(spr_status_btn_02, 0, room_width / 2, room_height - 150);
         if(mouse_check_button_pressed(mb_left)){
             global._item_menu = -1;
-			global.buying_limit = 2;
-			global.coin -= global.items[_selected][ATRIBUTES.VALUE];
+			global.buying_limit += 2;
+			if(_selected != -1){
+				global.coin -= global.items[_selected][ATRIBUTES.VALUE];
+			}
 			_selected = -1;
             room_goto(rm_world_01);
         }

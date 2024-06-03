@@ -1,1 +1,0 @@
-_countdown = 100 - (global.level * 3);
