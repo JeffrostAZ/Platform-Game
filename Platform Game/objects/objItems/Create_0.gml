@@ -103,9 +103,16 @@ global._card_alpha = 0;
 // Assegurando que não tentamos sortear mais itens do que disponíveis
 var _num_to_draw = 4;
 
-for (var i = 0; i < _num_to_draw; i++) {
+repeat(_num_to_draw){
     var _index = irandom_range(0, array_length(global.items) - 1);
 	ds_list_add(_displayed_items, _index);
 }
 
+// Obtém a câmera ativa
+_cam = view_get_camera(0);
+_get_camera_x = camera_get_view_width(_cam);
+_get_camera_y = camera_get_view_height(_cam);
+
+// Define posições relativas para os botões
+button_y = 100;
 button_spacing = 50;

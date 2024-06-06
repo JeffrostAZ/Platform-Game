@@ -68,6 +68,7 @@
     {"name":"spr_drone","order":3,"path":"sprites/spr_drone/spr_drone.yy",},
     {"name":"sprEnemyGreen","order":1,"path":"sprites/sprEnemyGreen/sprEnemyGreen.yy",},
     {"name":"sprProjectil","order":4,"path":"sprites/sprProjectil/sprProjectil.yy",},
+    {"name":"Create_Object_Limit","order":3,"path":"scripts/Create_Object_Limit/Create_Object_Limit.yy",},
     {"name":"sprScreen","order":12,"path":"sprites/sprScreen/sprScreen.yy",},
     {"name":"Sprite3","order":2,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"objHud","order":2,"path":"objects/objHud/objHud.yy",},

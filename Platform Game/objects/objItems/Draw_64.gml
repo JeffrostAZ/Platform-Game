@@ -1,10 +1,10 @@
 // Variáveis de configuração
-var _num_buttons = ds_list_size(_displayed_items);  // Número de botões
-var _button_width = room_width / 5;  // Cada botão tem um quinto da largura da tela
-var _pos_x = (room_width - _button_width * _num_buttons) / 2;  // Centraliza os botões horizontalmente
-var _height_btn = 350;
-var _button_y = room_height / 2 - (_num_buttons * button_spacing) / 2;  // Centraliza verticalmente baseado no número de botões
 
+var _num_buttons = ds_list_size(_displayed_items);  // Número de botões
+var _button_width = _get_camera_x / 5;  // Cada botão tem um quinto da largura da tela
+var _pos_x = (_get_camera_x - _button_width * _num_buttons) / 2;  // Centraliza os botões horizontalmente
+var _height_btn = 350;
+var _button_y = _get_camera_y / 2 - (_num_buttons * button_spacing) / 2;  // Centraliza verticalmente baseado no número de botões
 draw_set_font(fnt_items);
 
 // Inicializa arrays para _card_size e _card_alpha se ainda não existirem
@@ -15,7 +15,7 @@ if (!is_array(global._card_alpha)) {
     global._card_alpha = array_create(_num_buttons, 0);
 }
 
-if (global._item_menu){
+if (global._item_menu == 1){
     for (var _i = 0; _i < _num_buttons; _i++) {
         // Coordenadas do botão
         var _button_x = _pos_x + _i * _button_width;
@@ -69,19 +69,20 @@ if (global._item_menu){
         }
     }
 
-    if (point_in_rectangle(mouse_x, mouse_y, room_width / 2 - 60, room_height - 150, room_width / 2 + 60, room_height - 60)) {
-        //draw_rectangle(room_width / 2 - 60, 925, room_width / 2 + 60, 1025, false);
-		draw_sprite(spr_status_btn_02, 0, room_width / 2, room_height - 150);
+    if (point_in_rectangle(mouse_x, mouse_y,_get_camera_x / 2 - 60, _get_camera_y - 150, _get_camera_x / 2 + 60, _get_camera_y - 60)) { 
+        
+		draw_sprite(spr_status_btn_02, 0, _get_camera_x / 2, _get_camera_y - 150);
         if(mouse_check_button_pressed(mb_left)){
-            global._item_menu = -1;
 			global.buying_limit += 2;
 			if(_selected != -1){
 				global.coin -= global.items[_selected][ATRIBUTES.VALUE];
 			}
 			_selected = -1;
-            room_goto(rm_world_01);
+			global._item_menu = -1;
+			room_goto(rm_world_01);
         }
     } else {
-        draw_sprite(spr_status_btn_02, 0, room_width / 2, room_height - 150);
+        draw_sprite(spr_status_btn_02, 0, _get_camera_x / 2, _get_camera_y - 150);
+		draw_rectangle(_get_camera_x / 2 - 60, _get_camera_y - 150, _get_camera_x / 2 + 60, _get_camera_y - 60, false);
     }   
 }

@@ -2,95 +2,31 @@ if(keyboard_check_pressed(ord("R"))){
 	game_restart();	
 }
 
-
+if(global.exp >= global._exp_level_needs){
+	room_goto(rm_build);
+	global._item_menu = 1;
+	global.exp = 0;
+}
 switch(global._item_menu){
 	case -1:
-		instance_create_layer(0, 0, "Instances", objHud);
-		instance_create_layer(0, 0, "Instances", objEnemySpawner);
-
-		global._item_menu = 0;
+		instance_activate_all();
 	break;
 	
 	case 1:
-		if(global.upgrade == true){
-			
-			instance_create_depth(0, 0, depth, objItems);
-			instance_create_depth(0, 0, depth, objStatus);
-			global.upgrade = false;
-		
-		}
-		
+		instance_deactivate_object(objPlayer);
+		instance_deactivate_object(objAbilities);
+		instance_deactivate_object(objDrone);
 	break;
 }
 
-if(keyboard_check_pressed(ord("1"))){
-	global.ability = 0;
-}
+show_debug_message(room_width / 64);
 
-
-if(keyboard_check_pressed(ord("2"))){
-	global.ability = 1;	
-}
-
-if(keyboard_check_pressed(ord("3"))){
-	global.ability = 2;	
-}
-	
-if(keyboard_check_pressed(ord("4"))){
-	Create_World();
-}
-
-if(objController._pos_x > room_width - 600){
+if(objController._pos_x > room_width - 100){
 	_room_width += 1920;
-	show_debug_message(room_width); 
 	room_width = _room_width;
 	
-	Create_World();
+	var _range = room_width / 64;
+	
+	Create_World(1, global.level * 10, _range, objEnemy);
 }
 	
-#region World Generation
-
-
-//if(keyboard_check_pressed(vk_control)){
-//	global.change_world = 1;
-//	var _map = irandom(global.map);
-	
-//	switch(_map){
-//		case 0:
-		
-//		room_goto(rm_world_01);
-		
-//		break;
-		
-//		case 1:
-		
-//		room_goto(rm_world_02);
-		
-//		break;
-		
-//		case 2:
-		
-//		room_goto(rm_world_03);
-		
-//		break;
-		
-//		case 3:
-		
-//		room_goto(rm_world_04);
-		
-//		break;
-		
-//		case 4:
-		
-//		room_goto(rm_world_05);
-		
-//		break;
-//	}
-	
-//}
-
-//if(keyboard_check_released(vk_control)){
-//	global.change_world = -1;	
-//}
-
-#endregion

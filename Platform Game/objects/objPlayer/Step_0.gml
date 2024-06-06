@@ -1,13 +1,15 @@
+// Evento Step do objPlayer
+
 var _key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var _key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
-var _key_up = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W"));
+var _key_up = keyboard_check_pressed(ord("W"));
 var _key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 
 var _move = _key_right - _key_left;
 
 _move_x = _move * _agi;
 
-_move_y += _grv;
+_move_y += (_grv - global.jumping);
 
 _shoot_countdown -= 1;
 
@@ -15,13 +17,12 @@ var _dir = sign(mouse_x - x);
 image_xscale = _dir;
 
 #region Jumping
-
-if(place_meeting(x, y+1, objCollision) && _key_up){
-	_move_y = _jump * -1;
+if (place_meeting(x, y + 1, objCollision) && _key_up && global.jumping < 0.5) {
+    _move_y = -15;
 }
 
 #endregion
-	
+
 #region Collision objCollision
 // Verifica a colisão com as paredes (horizontal)
 if (place_meeting(x + _move_x, y, objCollision)) {
@@ -31,7 +32,7 @@ if (place_meeting(x + _move_x, y, objCollision)) {
     _move_x = 0;
 }
 
-// Verifica a colisão com o chão (vertical)
+// Verifica a colisão com o chão e o teto (vertical)
 if (place_meeting(x, y + _move_y, objCollision)) {
     while (!place_meeting(x, y + sign(_move_y), objCollision)) {
         y += sign(_move_y);
@@ -41,25 +42,24 @@ if (place_meeting(x, y + _move_y, objCollision)) {
 #endregion
 
 #region Animation
-
-//if(_key_left){
-//	_animation -= 0.2;
-//	_idle = _move_x;
-//} else if(_key_right){
-//	_animation += 0.2;
-//	_idle = _move_x;
-//} else {
-//	_animation = 0;
-//}
-
+// Comentado para focar na lógica de movimento e colisão
+// if (_key_left) {
+//     _animation -= 0.2;
+//     _idle = _move_x;
+// } else if (_key_right) {
+//     _animation += 0.2;
+//     _idle = _move_x;
+// } else {
+//     _animation = 0;
+// }
 #endregion
 
-#region Shared Atributes
-//SHARED VALUES
+#region Shared Attributes
+// SHARED VALUES
 objController._pos_x = x;
 objController._pos_y = y;
 
-//UPDATE VALUES
+// UPDATE VALUES
 _health = objController._health;
 _max_health = objController._max_health_status + objController._max_health_item_status;
 _energy = objController._energy;
@@ -72,38 +72,32 @@ _def = objController._def + objController._def_item_status;
 _atk = objController._atk + objController._atk_item_status;
 _shoot_spd = objController._shoot_spd;
 _shoot_frequency = objController._shoot_frequency + objController._shoot_frequency_item_status;
-
 #endregion
 
 #region Jetpack
-
-
-if(keyboard_check(vk_space) && _rocket_fuel > 10){
-	_move_y -= 1.5;	
-	
-	repeat(10){
-		var _inst = instance_create_depth(x, y, depth, objSteam);
-		var _dir = irandom_range(260, 280);
-		_inst.direction = _dir;
-		_inst.speed = 5;
-	}
-	
-	_rocket_fuel -= 1;
-}
-
+// Comentado para focar na lógica de movimento e colisão
+// if (keyboard_check(vk_space) && _rocket_fuel > 10) {
+//     _move_y -= 1.5;
+//     repeat(10) {
+//         var _inst = instance_create_depth(x, y, depth, objSteam);
+//         var _dir = irandom_range(260, 280);
+//         _inst.direction = _dir;
+//         _inst.speed = 5;
+//     }
+//     _rocket_fuel -= 1;
+// }
 #endregion
 
 #region Death System
-
-if(place_meeting(x, y, objFragment)){
-	objController._health -= 1;	
+if (place_meeting(x, y, objFragment)) {
+    objController._health -= 0;
 }
 
-if(_health <= 0){
-	game_restart();	
+if (_health <= 0) {
+    game_restart();
 }
-
 #endregion
 
+// Atualiza a posição do jogador
 x += _move_x;
 y += _move_y;

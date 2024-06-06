@@ -1,7 +1,16 @@
 // No evento Create do objeto controlador
+// Obtém a câmera ativa
+_cam = view_get_camera(0);
+_get_camera_x = camera_get_view_width(_cam);
+_get_camera_y = camera_get_view_height(_cam);
+
+// Define posições relativas para os botões
+button_y = 100;
+button_spacing = 100;
+
 _size = 0;
 _noise = 0;
-_room_width = 1920;
+_room_width = 0;
 _room_growth = 0;
 
 #region Global Variables
@@ -18,9 +27,10 @@ global.buying_limit = 2;
 global.upgrade = false;
 global.map = 4
 global.change_world = -1;
+global.jumping = 0;
+global.follow = false;
+global.size = 0;
 #endregion
-
-
 
 #region Status Attributes
 
@@ -64,12 +74,12 @@ _pos_y = 0;
 #endregion
 
 
-
 instance_create_layer(0, 0, "Instances", objStatus);
 
 instance_create_layer(0, 0, "Instances", objItems);
 
+instance_create_layer(0, 0, "Instances", objHud);
 
-function _generation(){
-		
-}
+var _range = irandom(room_width / 64);
+
+Create_World(1, global.level * 10, _range, objEnemy);

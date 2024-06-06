@@ -95,6 +95,7 @@
     {"id":{"name":"objSteam","path":"objects/objSteam/objSteam.yy",},},
     {"id":{"name":"sndShoot","path":"sounds/sndShoot/sndShoot.yy",},},
     {"id":{"name":"sprProjectil","path":"sprites/sprProjectil/sprProjectil.yy",},},
+    {"id":{"name":"Create_Object_Limit","path":"scripts/Create_Object_Limit/Create_Object_Limit.yy",},},
     {"id":{"name":"sprScreen","path":"sprites/sprScreen/sprScreen.yy",},},
     {"id":{"name":"spr_select_card_01","path":"sprites/spr_select_card_01/spr_select_card_01.yy",},},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
