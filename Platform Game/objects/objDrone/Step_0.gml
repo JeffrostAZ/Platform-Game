@@ -64,11 +64,13 @@ if (_follow == -1) {
         image_angle = _angle_to_target;
 
         // Dispara no inimigo
-        if (_time_since_last_shot > _shoot_interval) {
+        if (_time_since_last_shot > _shoot_interval) && (global.drone_bullet > 0) {
             // Cria o projétil (substitua objProjectil pelo nome do seu objeto de projétil)
             var _bullet = instance_create_layer(x, y, "Instances", objProjectil);
             _bullet.direction = _angle_to_target;
             _bullet.speed = 100;
+
+			global.drone_bullet--;
 
             // Reseta o contador de disparo
             _time_since_last_shot = 0;

@@ -30,6 +30,7 @@ global.change_world = -1;
 global.jumping = 0;
 global.follow = false;
 global.size = 0;
+global.drone_bullet = 50;
 #endregion
 
 #region Status Attributes
@@ -82,4 +83,4 @@ instance_create_layer(0, 0, "Instances", objHud);
 
 var _range = irandom(room_width / 64);
 
-Create_World(1, global.level * 10, _range, objEnemy);
+Create_World(1, global.level * 3, _range, objSpawner);

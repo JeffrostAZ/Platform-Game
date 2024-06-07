@@ -53,6 +53,14 @@ if(_shoot_countdown > _shot_limit && _dist <= 500){
 if(_health <= 0){
 	global.exp += 10 * (global.level + 2);
 	global.coin += 5 * global.level;
+	
+	var _ammo = irandom(100);
+	
+	if(_ammo <= 10){
+		var _inst = instance_create_layer(x, y, "Instances", objAmmo);
+		_inst.y = y - 64;
+	}
+	
 	instance_destroy();
 }
 

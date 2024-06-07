@@ -21,7 +21,6 @@ function Create_World(_first_call, _quantity, _world_pos, _object){
 		instance_create_layer((_cell * global.size), room_height / 2 - (_cell * _noise), "Instances", objCollision);
 		global.size++;
 		
-		
 		if(_first_call == 1){
 			var _spawn = irandom(_world_pos);
 			if(instance_number(_object) < _quantity){

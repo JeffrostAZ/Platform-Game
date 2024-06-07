@@ -5,7 +5,7 @@ if(global.buying_limit <= 0){
 }
 
 if(_selected != -1 && global.upgrade == true){
-	if(global.coin > global.items[_selected][ATRIBUTES.VALUE] && global.buying_limit > 0){
+	if(global.coin >= global.items[_selected][ATRIBUTES.VALUE] && global.buying_limit > 0){
 		global.buying_limit -= 1;
 		switch(_item){
 	
