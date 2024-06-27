@@ -1,8 +1,8 @@
 
 
-if(place_meeting(x, y, objEnemy)){
+if(place_meeting(x, y, objEnemy_1)){
 	audio_play_sound(sndShoot, 1, 0);
-	objEnemy.id._health -= objController._atk;
+	objEnemy_1.id._health -= objController._atk;
 				
 	repeat(10){
 		var _rand_dir = irandom_range(0, 359);

@@ -12,7 +12,7 @@ if (_follow == -1) {
     var _nearest_enemy = noone;
     var _nearest_dist = 10000;  // Define uma distância inicial grande
 
-    with (objEnemy) {  // Substitua objEnemy pelo nome do seu objeto de inimigo
+    with (objEnemy_1) {  // Substitua objEnemy pelo nome do seu objeto de inimigo
         if (!other._being_attacked) {
             var _dist = point_distance(other.x, other.y, x, y);
             if (_dist < _nearest_dist) {

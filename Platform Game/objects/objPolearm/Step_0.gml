@@ -9,8 +9,8 @@ image_xscale = _dir;
 
 _countdown -= 1;
 
-if(place_meeting(x, y, objEnemy) && _countdown <= 0){
-	objEnemy.id._health -= 15;
+if(place_meeting(x, y, objEnemy_1) && _countdown <= 0){
+	objEnemy_1.id._health -= 15;
 	_countdown = 25;
 }
 //#endregion

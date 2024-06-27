@@ -31,6 +31,23 @@ for (var _i = 0; _i < ds_list_size(_menu_options); _i++) {
 			if (mouse_check_button_pressed(mb_left)) {
 				switch (_selected_option) {
 				    case 0: room_goto(rm_world_01); break; // Novo jogo
+					case 1: 
+					
+						var _dir = working_directory + "highscore.txt"
+						var _backslash = "\\";
+					
+						if(file_text_open_read(_dir) != -1){
+							var _read = file_text_open_read(_dir);
+							var _load = file_text_read_string(_read);
+							
+							var _decode = json_decode(_dir);
+							
+						} else {
+							
+						}
+					
+					break;
+					
 					case 2: room_goto(rm_config); break; //Opções
 				    case 3: game_end(); break;         // Sair
 				}

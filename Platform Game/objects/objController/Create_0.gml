@@ -26,11 +26,14 @@ global._exp_level_needs = 300;
 global.buying_limit = 2;
 global.upgrade = false;
 global.map = 4
-global.change_world = -1;
+global.change_world = 0;
 global.jumping = 0;
 global.follow = false;
 global.size = 0;
 global.drone_bullet = 50;
+global.state = "rondar";
+global.map_save = ds_map_create();
+global.grid_count = 0;
 #endregion
 
 #region Status Attributes
@@ -81,6 +84,7 @@ instance_create_layer(0, 0, "Instances", objItems);
 
 instance_create_layer(0, 0, "Instances", objHud);
 
-var _range = irandom(room_width / 64);
+instance_create_layer(0, 0, "Instances", objInventory);
 
-Create_World(1, global.level * 3, _range, objSpawner);
+var _range = irandom(room_width / 64);
+ 

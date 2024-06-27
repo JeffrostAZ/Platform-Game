@@ -16,6 +16,10 @@ _shoot_countdown -= 1;
 var _dir = sign(mouse_x - x);
 image_xscale = _dir;
 
+if(mouse_check_button_pressed(mb_left)){
+	instance_create_layer(x, y - 64, "Instances", objBomb);	
+}
+
 #region Jumping
 if (place_meeting(x, y + 1, objCollision) && _key_up && global.jumping < 0.5) {
     _move_y = -15;
@@ -42,16 +46,17 @@ if (place_meeting(x, y + _move_y, objCollision)) {
 #endregion
 
 #region Animation
-// Comentado para focar na lógica de movimento e colisão
-// if (_key_left) {
-//     _animation -= 0.2;
-//     _idle = _move_x;
-// } else if (_key_right) {
-//     _animation += 0.2;
-//     _idle = _move_x;
-// } else {
-//     _animation = 0;
-// }
+ //Comentado para focar na lógica de movimento e colisão
+ if (_key_left) {
+     _animation -= 0.2;
+     _idle = -1;
+ } else if (_key_right) {
+     _animation += 0.2;
+     _idle = 1;
+ } else {
+     _animation = 4;
+	 _idle = sign(mouse_x - x);
+ }
 #endregion
 
 #region Shared Attributes

@@ -1,3 +1,5 @@
+global.change_world++;
+
 if(keyboard_check_pressed(ord("R"))){
 	game_restart();	
 }
@@ -24,7 +26,10 @@ switch(global._item_menu){
 	break;
 }
 
-show_debug_message(room_width / 64);
+if(keyboard_check_pressed(ord("T")) && global.change_world >= (60 * 60 * 0.5)){
+	var _room = choose(rm_world_01, rm_world_02, rm_world_03, rm_world_04, rm_world_05);
+	room_goto(_room);
+}
 
 //if(objController._pos_x > room_width - 400){
 //	_room_width += 64;
