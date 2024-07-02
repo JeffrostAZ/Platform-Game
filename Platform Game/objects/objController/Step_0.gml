@@ -35,12 +35,6 @@ if(keyboard_check_pressed(ord("T")) && global.change_world >= (60 * 60 * 0.5)){
 	room_goto(_room);
 }
 
-//if(objController._pos_x > room_width - 400){
-//	_room_width += 64;
-//	room_width = _room_width;
-	
-//	var _range = room_width / 64;
-	
-//	Create_World(1, global.level * 3, _range, objSpawner);
-//}
-	
+if(keyboard_check_pressed(vk_enter)){
+	room_goto(rm_city);	
+}

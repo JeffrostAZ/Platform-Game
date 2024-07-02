@@ -23,14 +23,11 @@ if (place_meeting(x, y + _move_y, objCollision)) {
 }
 #endregion
 
-#region Collision objEnemy
-//// Verifica a colisão com as paredes (horizontal)
-//if (place_meeting(x + _move_x, y, objEnemy)) {
-//    while (!place_meeting(x + sign(_move_x), y, objEnemy)) {
-//        x += sign(_move_x);
-//    }
-//    _move_x = 0;
-//}
+#region Collision Projetil
+if (place_meeting(x, y, objProjectil)) {
+	_health -= objController._atk;
+	instance_destroy(objProjectil.id);
+}
 
 #endregion
 
@@ -50,9 +47,9 @@ if(_shoot_countdown > _shot_limit && _dist <= 500){
 
 #endregion
 
-if(place_meeting(x, y, objFragment)){
-	_health -= 10;
-}
+//if(place_meeting(x, y, objFragment)){
+//	_health -= 10;
+//}
 
 if(_health <= 0){
 	global.exp += 10 * (global.level + 2);

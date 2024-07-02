@@ -79,20 +79,6 @@ _shoot_spd = objController._shoot_spd;
 _shoot_frequency = objController._shoot_frequency + objController._shoot_frequency_item_status;
 #endregion
 
-#region Jetpack
-// Comentado para focar na lógica de movimento e colisão
-// if (keyboard_check(vk_space) && _rocket_fuel > 10) {
-//     _move_y -= 1.5;
-//     repeat(10) {
-//         var _inst = instance_create_depth(x, y, depth, objSteam);
-//         var _dir = irandom_range(260, 280);
-//         _inst.direction = _dir;
-//         _inst.speed = 5;
-//     }
-//     _rocket_fuel -= 1;
-// }
-#endregion
-
 #region Death System
 if (place_meeting(x, y, objFragment)) {
     objController._health -= 0;
