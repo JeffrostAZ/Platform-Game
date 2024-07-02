@@ -13,3 +13,10 @@ for (var _i = 0; _i < array_length(_menu_items); _i++) {
 
 // Definindo o _option_count após a lista ter sido preenchida
 _option_count = ds_list_size(_menu_options);
+
+
+#region Save System
+
+global.grid_count = 0;
+
+#endregion

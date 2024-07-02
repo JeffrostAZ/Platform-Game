@@ -30,22 +30,50 @@ for (var _i = 0; _i < ds_list_size(_menu_options); _i++) {
         _selected_option = _i;
 			if (mouse_check_button_pressed(mb_left)) {
 				switch (_selected_option) {
-				    case 0: room_goto(rm_world_01); break; // Novo jogo
+				    case 0: 
+						
+						room_goto(rm_world_01);
+						
+					break; // Novo jogo
 					case 1: 
-					
-						var _dir = working_directory + "highscore.txt"
-						var _backslash = "\\";
-					
-						if(file_text_open_read(_dir) != -1){
-							var _read = file_text_open_read(_dir);
-							var _load = file_text_read_string(_read);
+					#region Save System Old
+						//var _dir = working_directory + "highscore.txt"
+						//var _backslash = "\\";
+						
+						//var _read = file_text_open_read(_dir);
+						//var _load = file_text_read_string(_read);
+						
+						////var _string = json_parse(_load);
+						
+						//var _str = json_parse(_load);
+						
+						
+						//if(file_text_open_read(_dir) != -1){
 							
-							var _decode = json_decode(_dir);
+						//	ds_map_copy(global.map_save, _str);
 							
-						} else {
+						//	var _test1 = ds_map_find_value(global.map_save, "Item1");
+						//	var _test2 = ds_map_find_value(global.map_save, "Item2");
+						//	var _test3 = ds_map_find_value(global.map_save, "Item3");
+						//	var _test4 = ds_map_find_value(global.map_save, "Item4");
+
+						//	show_message(_test1);
+						//	show_message(_test2);
+						//	show_message(_test3);
+						//	show_message(_test4);
 							
-						}
-					
+							//show_message(ds_map_find_value(global.map_save, "Item"));
+						//	//show_message(_str);
+							
+							
+							
+						//} else {
+							
+						//}
+					#endregion
+						global.save = 1;
+						room_goto(rm_world_01);
+						
 					break;
 					
 					case 2: room_goto(rm_config); break; //Opções

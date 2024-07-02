@@ -32,8 +32,6 @@ global.follow = false;
 global.size = 0;
 global.drone_bullet = 50;
 global.state = "rondar";
-global.map_save = ds_map_create();
-global.grid_count = 0;
 #endregion
 
 #region Status Attributes
@@ -87,4 +85,3 @@ instance_create_layer(0, 0, "Instances", objHud);
 instance_create_layer(0, 0, "Instances", objInventory);
 
 var _range = irandom(room_width / 64);
- 
