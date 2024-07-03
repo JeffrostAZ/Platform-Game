@@ -34,6 +34,18 @@ global.drone_bullet = 50;
 global.state = "rondar";
 #endregion
 
+#region Elements
+
+global.hydrogen = 0;
+global.oxygen = 0;
+global.carbon = 0;
+global.nitrogen = 0;
+global.water = 0;
+global.food = 0;
+global.other_elements = 0;
+
+#endregion
+
 #region Status Attributes
 
 _max_health_status = 0;
