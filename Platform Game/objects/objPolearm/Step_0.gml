@@ -66,7 +66,7 @@ if (_launched) {
     // Cria um objeto na posição da lâmina se a distância percorrida for suficiente
     _distance_traveled += speed * _dir;
     if (_distance_traveled >= _create_interval) {
-        instance_create_layer(_blade_x, _blade_y, "Instances", objFragment); // Substitua "Instances" pelo nome da camada e "obj_trail" pelo nome do objeto a ser criado
+        instance_create_layer(_blade_x, _blade_y, "Collision", objFragment); // Substitua "Instances" pelo nome da camada e "obj_trail" pelo nome do objeto a ser criado
         _distance_traveled = 0; // Reseta a distância percorrida
     }
     

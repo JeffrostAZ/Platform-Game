@@ -17,7 +17,7 @@ var _dir = sign(mouse_x - x);
 image_xscale = _dir;
 
 if(mouse_check_button_pressed(mb_left)){
-	instance_create_layer(x, y - 64, "Instances", objBomb);	
+	instance_create_layer(x, y - 64, "Collision", objBomb);	
 }
 
 #region Jumping

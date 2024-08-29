@@ -34,7 +34,3 @@ if(keyboard_check_pressed(ord("T")) && global.change_world >= (60 * 60 * 0.5)){
 	var _room = choose(rm_world_01, rm_world_02, rm_world_03, rm_world_04, rm_world_05);
 	room_goto(_room);
 }
-
-if(keyboard_check_pressed(vk_enter)){
-	room_goto(rm_city);	
-}

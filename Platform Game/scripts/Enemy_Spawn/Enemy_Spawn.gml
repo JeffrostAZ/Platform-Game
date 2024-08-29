@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Enemy_Spawn(_x, _y){
 	
-	var _enemy = instance_create_layer(_x, _y, "Instances", objEnemy_1);  // Cria o inimigo na borda da room
+	var _enemy = instance_create_layer(_x, _y, "Collision", objEnemy_1);  // Cria o inimigo na borda da room
 	
 	if (global.state == "rondar") {
 	    // Atualiza o contador de tempo para disparos
@@ -49,7 +49,7 @@ function Enemy_Spawn(_x, _y){
 	    // Dispara no inimigo
 	    if (_time_since_last_shot > _shoot_interval) && (global.drone_bullet > 0) {
 	        // Cria o projétil (substitua objProjectil pelo nome do seu objeto de projétil)
-	        var _bullet = instance_create_layer(x, y, "Instances", objProjectil);
+	        var _bullet = instance_create_layer(x, y, "Collision", objProjectil);
 	        _bullet.direction = _angle_to_target;
 	        _bullet.speed = 100;
 

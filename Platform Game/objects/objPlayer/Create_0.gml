@@ -1,4 +1,4 @@
-instance_create_layer(0, 0, "Instances", objAbilities);
+instance_create_layer(0, 0, "Controller", objAbilities);
 
 _grv = 0.9;
 

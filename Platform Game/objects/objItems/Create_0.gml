@@ -76,6 +76,8 @@ global.items = [
 	Item_Create("Plasma Cannon", 140, 2002, 12, 2, 3, 12, 1, 5, 4, 5)
 ];
 
+
+
 // Sorteia 5 itens únicos e armazena em global.displayed_items
 _displayed_items = ds_list_create();
 
@@ -83,11 +85,13 @@ _selected = -1;
 
 _last_selected = -1;
 
+_scroll = 1975;
+
 global._card_size = 0;
 global._card_alpha = 0;
 
 // Assegurando que não tentamos sortear mais itens do que disponíveis
-var _num_to_draw = 4;
+var _num_to_draw = 28;
 
 repeat(_num_to_draw){
     var _index = irandom_range(0, array_length(global.items) - 1);

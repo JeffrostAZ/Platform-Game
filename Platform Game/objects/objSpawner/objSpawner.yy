@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Control",
-    "path": "folders/Objects/Control.yy",
+    "name": "Spawner",
+    "path": "folders/Objects/Control/Spawner.yy",
   },
   "parentObjectId": null,
   "persistent": false,

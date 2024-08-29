@@ -18,7 +18,7 @@ function Create_World(_first_call, _quantity, _world_pos, _object){
 		 
 		_noise += _parlin_1;
 		
-		instance_create_layer((_cell * global.size), room_height / 2 - (_cell * _noise), "Instances", objCollision);
+		instance_create_layer((_cell * global.size), room_height / 2 - (_cell * _noise), "Collision", objCollision);
 		global.size++;
 		
 		if(_first_call == 1){
@@ -42,12 +42,12 @@ function Create_World(_first_call, _quantity, _world_pos, _object){
 			
 			
 			if(instance_number(_object) < _quantity){
-				instance_create_layer((_cell * _spawn), _y_spawn, "Instances", _object);
+				instance_create_layer((_cell * _spawn), _y_spawn, "Collision", _object);
 			}
 		}
 	
 		if(global.size == _width / 2) && (instance_number(objPlayer) < 1){
-			instance_create_layer((_cell * global.size), ((room_height / 2) - 200) - (_cell * _noise), "Instances", objPlayer);
+			instance_create_layer((_cell * global.size), ((room_height / 2) - 200) - (_cell * _noise), "Controller", objPlayer);
 		}
 	}
 }

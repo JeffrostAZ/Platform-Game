@@ -38,7 +38,7 @@ function Load(){
 		
 		var _collisionData = _collision[_i];
 		
-		var _inst = instance_create_layer(_collisionData._x, _collisionData._y, "Instances", objCollision);
+		var _inst = instance_create_layer(_collisionData._x, _collisionData._y, "Collision", objCollision);
 		
 	}
 }

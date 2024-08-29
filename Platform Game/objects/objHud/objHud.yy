@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Control",
-    "path": "folders/Objects/Control.yy",
+    "name": "HUD",
+    "path": "folders/Objects/Control/HUD.yy",
   },
   "parentObjectId": null,
   "persistent": false,

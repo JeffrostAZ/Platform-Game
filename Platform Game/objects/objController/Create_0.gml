@@ -17,7 +17,7 @@ _room_growth = 0;
 global.items = [];
 global.ability = 0;
 global.status_buttons = [];
-global.coin = 200;
+global.coin = 500000;
 global.level = 1;
 global.exp  = 0;
 global.exp_point_skill = 5;
@@ -30,6 +30,7 @@ global.change_world = 0;
 global.jumping = 0;
 global.follow = false;
 global.size = 0;
+global.world = 1;
 global.drone_bullet = 50;
 global.state = "rondar";
 #endregion
@@ -88,12 +89,12 @@ _pos_y = 0;
 #endregion
 
 
-instance_create_layer(0, 0, "Instances", objStatus);
+instance_create_layer(0, 0, "Controller", objStatus);
 
-instance_create_layer(0, 0, "Instances", objItems);
+instance_create_layer(0, 0, "Controller", objItems);
 
-instance_create_layer(0, 0, "Instances", objHud);
+instance_create_layer(0, 0, "Controller", objHud);
 
-instance_create_layer(0, 0, "Instances", objInventory);
+instance_create_layer(0, 0, "Controller", objInventory);
 
 var _range = irandom(room_width / 64);
