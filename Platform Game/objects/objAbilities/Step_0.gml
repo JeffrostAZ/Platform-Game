@@ -17,11 +17,11 @@ switch(global.ability){
 	break;
 	
 	case 2:
-		if(_current_inst != undefined){
-			instance_destroy(_current_inst);
-		}
+		//if(_current_inst != undefined){
+		//	instance_destroy(_current_inst);
+		//}
 		
-		Create_Object_Limit(objController._pos_x, objController._pos_y, objDrone, 1);
+		//Create_Object_Limit(objController._pos_x, objController._pos_y, objDrone, 1);
 
 	break;
 }

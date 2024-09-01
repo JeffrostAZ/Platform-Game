@@ -49,7 +49,6 @@
   "resources": [
     {"id":{"name":"rm_world_05","path":"rooms/rm_world_05/rm_world_05.yy",},},
     {"id":{"name":"sprFragment","path":"sprites/sprFragment/sprFragment.yy",},},
-    {"id":{"name":"objSpawnPlayer","path":"objects/objSpawnPlayer/objSpawnPlayer.yy",},},
     {"id":{"name":"spr_granade","path":"sprites/spr_granade/spr_granade.yy",},},
     {"id":{"name":"building_5","path":"sprites/building_5/building_5.yy",},},
     {"id":{"name":"Item_Create","path":"scripts/Item_Create/Item_Create.yy",},},
@@ -89,7 +88,6 @@
     {"id":{"name":"objStatus","path":"objects/objStatus/objStatus.yy",},},
     {"id":{"name":"sprDoor","path":"sprites/sprDoor/sprDoor.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
-    {"id":{"name":"objBomb","path":"objects/objBomb/objBomb.yy",},},
     {"id":{"name":"objAmmo","path":"objects/objAmmo/objAmmo.yy",},},
     {"id":{"name":"sprEnemyYellow","path":"sprites/sprEnemyYellow/sprEnemyYellow.yy",},},
     {"id":{"name":"spr_rifle","path":"sprites/spr_rifle/spr_rifle.yy",},},
@@ -121,6 +119,7 @@
     {"id":{"name":"objHud","path":"objects/objHud/objHud.yy",},},
     {"id":{"name":"objEnemy_1","path":"objects/objEnemy_1/objEnemy_1.yy",},},
     {"id":{"name":"building_3","path":"sprites/building_3/building_3.yy",},},
+    {"id":{"name":"objSpawnPlayer","path":"objects/objSpawnPlayer/objSpawnPlayer.yy",},},
     {"id":{"name":"objController","path":"objects/objController/objController.yy",},},
     {"id":{"name":"objEnemy_3","path":"objects/objEnemy_3/objEnemy_3.yy",},},
     {"id":{"name":"objWorldGenerate","path":"objects/objWorldGenerate/objWorldGenerate.yy",},},

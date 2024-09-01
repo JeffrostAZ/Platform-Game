@@ -33,6 +33,8 @@ global.size = 0;
 global.world = 1;
 global.drone_bullet = 50;
 global.state = "rondar";
+global.room_change = 0;
+global.blocks = 10;
 #endregion
 
 #region Elements

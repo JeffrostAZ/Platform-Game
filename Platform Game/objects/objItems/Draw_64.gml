@@ -1,4 +1,4 @@
-// Variáveis de configuração
+ // Variáveis de configuração
 
 var _num_buttons = ds_list_size(_displayed_items);  // Número de botões
 var _button_width = _get_camera_x / 10;  // Cada botão tem um quinto da largura da tela
@@ -49,26 +49,25 @@ if (global._item_menu == 1){
 		draw_set_color(c_yellow);
 		draw_text(_button_x + (_button_width / 2) - 100, _button_y - 35, string(global.items[_item][1]) + string("$"));
 		
-		draw_set_color(c_black);
-		draw_text(_button_x - 50, 620, "Strength");
-		draw_text(_button_x - 50, 650, "Agility");
-		draw_text(_button_x - 50, 680, "Health");
-		draw_text(_button_x - 50, 710, "Damage");
-		
-		draw_set_color(c_red);
-		draw_text(_button_x + 80, 620, global.items[_item][ATRIBUTES.FORCA]);
-		draw_text(_button_x + 80, 650, global.items[_item][ATRIBUTES.VELOCIDADE]);
-		draw_text(_button_x + 80, 680, global.items[_item][ATRIBUTES.VIDA]);
-		draw_text(_button_x + 80, 710, global.items[_item][ATRIBUTES.ATAQUE]);
+		//botão de compra
+		var _compra_pos = 250;
+		draw_rectangle(_button_x + (_button_width / 2) - 150, _button_y + _compra_pos, _button_x + (_button_width / 2), _button_y + _compra_pos + 50 , 1);
+		draw_text(_button_x + (_button_width / 2) - 145, _button_y + _compra_pos, "COMPRAR");
 		
         // Interatividade e visualização do botão
         if (point_in_rectangle(mouse_x, mouse_y, _button_x - 50, _button_y, _button_x + _button_width - 100, _button_y + _height_btn + 100)) {
 			
-			if(mouse_check_button_pressed(mb_left)){
-				_selected = _i;
-				global.upgrade = true;
-			}
-			
+			draw_set_color(c_black);
+			draw_text(350 - 50, 720, "Strength");
+			draw_text(350 - 50, 750, "Agility");
+			draw_text(350 - 50, 780, "Health");
+			draw_text(350 - 50, 810, "Damage");
+		
+			draw_set_color(c_red);
+			draw_text(350 + 80, 720, global.items[_item][ATRIBUTES.FORCA]);
+			draw_text(350 + 80, 750, global.items[_item][ATRIBUTES.VELOCIDADE]);
+			draw_text(350 + 80, 780, global.items[_item][ATRIBUTES.VIDA]);
+			draw_text(350 + 80, 810, global.items[_item][ATRIBUTES.ATAQUE]);
 			
             global._card_size[_i] = min(global._card_size[_i] + 0.05, 0.05);
             global._card_alpha[_i] = min(global._card_alpha[_i] + 0.5, 0.05);
@@ -81,11 +80,27 @@ if (global._item_menu == 1){
         // Mantém o item selecionado
         if(_selected == _i){
             global._card_alpha[_i] = 1;
+			
+			
         } else {
             if (!point_in_rectangle(mouse_x, mouse_y, _button_x, _button_y, _button_x + _button_width, _button_y + _height_btn + 100)) {
                 global._card_alpha[_i] = 0;
             }
         }
+		
+		//campo do botão de compra
+		if (point_in_rectangle(mouse_x, mouse_y, _button_x + (_button_width / 2) - 150, _button_y + _compra_pos, _button_x + (_button_width / 2), _button_y + _compra_pos + 50)) {
+			var _color = c_black;
+			draw_text_color(_button_x + (_button_width / 2) - 145, _button_y + _compra_pos, "COMPRAR", _color, _color, _color, _color, 1);
+			draw_set_color(c_yellow);
+			draw_rectangle(_button_x + (_button_width / 2) - 150, _button_y + _compra_pos, _button_x + (_button_width / 2), _button_y + _compra_pos + 50, 0);
+			
+			if(mouse_check_button_pressed(mb_left)){
+				_selected = _i;
+				global.upgrade = true;
+			}
+		}
+
     }
 
     if (point_in_rectangle(mouse_x, mouse_y,_get_camera_x / 2 - 60, _get_camera_y - 150, _get_camera_x / 2 + 60, _get_camera_y - 60)) { 

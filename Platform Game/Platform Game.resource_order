@@ -32,7 +32,6 @@
   "ResourceOrderSettings": [
     {"name":"rm_world_05","order":7,"path":"rooms/rm_world_05/rm_world_05.yy",},
     {"name":"sprFragment","order":6,"path":"sprites/sprFragment/sprFragment.yy",},
-    {"name":"objSpawnPlayer","order":1,"path":"objects/objSpawnPlayer/objSpawnPlayer.yy",},
     {"name":"spr_granade","order":2,"path":"sprites/spr_granade/spr_granade.yy",},
     {"name":"building_5","order":4,"path":"sprites/building_5/building_5.yy",},
     {"name":"building_2","order":1,"path":"sprites/building_2/building_2.yy",},
@@ -64,7 +63,6 @@
     {"name":"Enemy_Spawn","order":2,"path":"scripts/Enemy_Spawn/Enemy_Spawn.yy",},
     {"name":"sprDoor","order":28,"path":"sprites/sprDoor/sprDoor.yy",},
     {"name":"rm_menu","order":1,"path":"rooms/rm_menu/rm_menu.yy",},
-    {"name":"objBomb","order":4,"path":"objects/objBomb/objBomb.yy",},
     {"name":"objAmmo","order":1,"path":"objects/objAmmo/objAmmo.yy",},
     {"name":"sprEnemyYellow","order":5,"path":"sprites/sprEnemyYellow/sprEnemyYellow.yy",},
     {"name":"spr_rifle","order":1,"path":"sprites/spr_rifle/spr_rifle.yy",},
@@ -90,6 +88,7 @@
     {"name":"objPreviewRoom","order":3,"path":"objects/objPreviewRoom/objPreviewRoom.yy",},
     {"name":"objHud","order":4,"path":"objects/objHud/objHud.yy",},
     {"name":"building_3","order":2,"path":"sprites/building_3/building_3.yy",},
+    {"name":"objSpawnPlayer","order":1,"path":"objects/objSpawnPlayer/objSpawnPlayer.yy",},
     {"name":"objController","order":1,"path":"objects/objController/objController.yy",},
     {"name":"objEnemy_3","order":2,"path":"objects/objEnemy_3/objEnemy_3.yy",},
     {"name":"objWorldGenerate","order":3,"path":"objects/objWorldGenerate/objWorldGenerate.yy",},

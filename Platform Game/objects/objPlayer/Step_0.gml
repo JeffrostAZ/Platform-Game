@@ -16,10 +16,6 @@ _shoot_countdown -= 1;
 var _dir = sign(mouse_x - x);
 image_xscale = _dir;
 
-if(mouse_check_button_pressed(mb_left)){
-	instance_create_layer(x, y - 64, "Collision", objBomb);	
-}
-
 #region Jumping
 if (place_meeting(x, y + 1, objCollision) && _key_up && global.jumping < 0.5) {
     _move_y = -15;
@@ -86,6 +82,26 @@ if (place_meeting(x, y, objFragment)) {
 
 if (_health <= 0) {
     game_restart();
+}
+#endregion
+
+#region Spawn System
+
+switch(global.room_change){
+
+	case 1: 
+		x = objPreviewRoom.x + 128;
+		y = objPreviewRoom.y + 64;
+		global.room_change = 0;
+		
+		break;
+		
+	case 2:
+		x = objNextRoom.x - 128;
+		y = objNextRoom.y + 64;
+		global.room_change = 0;
+		
+		break;
 }
 #endregion
 
