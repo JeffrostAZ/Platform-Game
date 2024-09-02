@@ -30,7 +30,7 @@ switch(global._item_menu){
 	break;
 }
 
-if(keyboard_check(vk_control)){
-	room_goto(rm_build);
-	global._item_menu = 1;
-}
+//if(keyboard_check(vk_control)){
+//	room_goto(rm_build);
+//	global._item_menu = 1;
+//}

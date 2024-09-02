@@ -1,8 +1,18 @@
 draw_self();
 
 if(point_in_rectangle(mouse_x, mouse_y, x ,y - 64, x + 64, y)){
-	draw_set_color(c_lime);
-	draw_rectangle(x, y - 64, x + 64, y, 1);
+	
+	if(_pos > 300){
+		draw_set_color(c_lime);
+		draw_rectangle(x, y - 64, x + 64, y, 1);
+	} else {
+		draw_set_color(c_red);
+		draw_rectangle(x, y - 64, x + 64, y, 1);
+	}
+	
+	
+	
+	
 	//if(_count == 1 && mouse_check_button_pressed(mb_left)){
 	//	instance_create_depth(x, y - 64, depth, objCollision);
 	//	_count = 0;

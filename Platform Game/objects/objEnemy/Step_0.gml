@@ -5,6 +5,24 @@ _move_y += _grv;
 
 _shoot_countdown += 1;
 
+#region Create Block System
+
+_pos = point_distance(mouse_x, mouse_y, x, y);
+
+if(point_in_rectangle(mouse_x, mouse_y, x ,y - 64, x + 64, y)){
+	if(global.blocks > 0 && _pos > 200){
+		if(_count == 1 && mouse_check_button_pressed(mb_left)){
+		
+			instance_create_layer(x, y - 64, "Collision", objCollision);
+			_count = 0;
+			
+			global.blocks--;
+		}
+	}
+}
+
+#endregion
+
 #region Collision objCollision
 // Verifica a colisão com as paredes (horizontal)
 if (place_meeting(x + _move_x, y, objCollision)) {
@@ -47,6 +65,8 @@ if(_shoot_countdown > _shot_limit && _dist <= 500){
 
 #endregion
 
+
+
 //if(place_meeting(x, y, objFragment)){
 //	_health -= 10;
 //}
@@ -64,6 +84,8 @@ if(_health <= 0){
 	
 	instance_destroy();
 }
+
+
 
 x += _move_x;
 y += _move_y; 

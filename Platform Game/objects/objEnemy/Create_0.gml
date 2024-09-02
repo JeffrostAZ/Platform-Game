@@ -16,7 +16,8 @@ _shoot_countdown = 0;
 _shot_limit = 75;
 _shoot_spd = 5;
 
-
+_pos = 0;
+_count = 1;
 #region
 
 // Variáveis de controle
