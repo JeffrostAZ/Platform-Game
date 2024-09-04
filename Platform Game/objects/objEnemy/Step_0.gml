@@ -65,7 +65,7 @@ if(_shoot_countdown > _shot_limit && _dist <= 500){
 
 #endregion
 
-
+ 
 
 //if(place_meeting(x, y, objFragment)){
 //	_health -= 10;
