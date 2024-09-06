@@ -1,13 +1,16 @@
 #region Teste angulo
 // Variáveis de inicialização (você pode alterar esses valores)
-var _start_x = objPlayer.x; // Ponto inicial X do lançamento
+var _start_x = x; // Ponto inicial X do lançamento
 var _start_y = 800; // Ponto inicial Y do lançamento
-var _velocity = 10 + (_launch_power * 10); // Velocidade inicial do lançamento
-var _angle = 45 + _move_y; // Ângulo de lançamento em graus
+var _mouse_aim = mouse_x / 10;
+var _velocity = 10 + (_mouse_aim / 10); // Velocidade inicial do lançamento
+var _angle = 45 + _move_angle_y; // Ângulo de lançamento em graus
 var _gravity_force = 0.3; // Gravidade aplicada
 
 // Converte o ângulo para radianos para usar em funções trigonométricas
 var _rad_angle = degtorad(_angle);
+
+
 
 // Calcula as componentes X e Y da velocidade
 var _velocity_x = _velocity * cos(_rad_angle);
@@ -15,7 +18,7 @@ var _velocity_y = _velocity * sin(_rad_angle);
 
 // Parâmetros de tempo
 var _time_step = 1; // Intervalo de tempo entre cada ponto desenhado
-var _max_time = max(0.1, _move_x); // Tempo máximo (afeta o comprimento da parábola)
+var _max_time = 50; // Tempo máximo (afeta o comprimento da parábola)
 
 // Inicializa variáveis para a posição
 var _t = 0;
@@ -46,8 +49,10 @@ _cur_y = _current_y;
 #endregion
 
 if(keyboard_check_pressed(ord("C"))){
-	var _inst = instance_create_depth(objPlayer.x, objPlayer.y - 54, depth, objProjectilTest);
+	var _inst = instance_create_depth(x, y - 54, depth, objProjectilTest);
 	_inst.direction = _angle;
 	_inst._gravity = _gravity_force;
 	_inst.speed = _velocity + 0.3;
 }
+
+

@@ -32,6 +32,16 @@ _box__existence = false;
 
 _instance = 0;
 
+_launch_power = 0;
+
+_cur_x = 0;
+_cur_y = 0;
+
+_move_angle_x = 0;
+_move_angle_y = 0;
+
+_point_view = 1;
+
 // Obtém a câmera ativa
 _cam = view_get_camera(0);
 _get_camera_x = camera_get_view_width(_cam);
