@@ -58,22 +58,22 @@ enum ATRIBUTES {
 
 _mult = 0.1;
 global.items = [
-	Item_Create("Laser Rifle", 120, 2001, 11, 3, 5, 15, 5, 3, 2, 5),
-	Item_Create("Plasma Cannon", 140, 2002, 12, 5, 5, 12, 3, 5, 4, 5),
-	Item_Create("Quantum Blade", 90, 2003, 13, 3, 4, 10, 3, 2, 3, 5),
-	Item_Create("Ion Blaster", 100, 2004, 14, 2, 3, 18, 10, 2, 3, 5),
-	Item_Create("Gravity Hammer", 130, 2005, 2, 3, 15, 13, 3, 4, 5, 5),
-	Item_Create("Photon Grenade", 80, 2006, 3, 5, 5, 15, 3, 1, 2, 5),
-	Item_Create("Neutron Gun", 150, 2007, 17, 5, 3, 15, 8, 4, 4, 5),
-	Item_Create("Antimatter Rifle", 230, 2008, 3, 4, 5, 4, 5, 5, 6, 5),
-	Item_Create("Cryo Cannon", 110, 2009, 9, 7, 2, 5, 5, 2, 3, 1),
-	Item_Create("EMP Launcher", 90, 2010, 10, 8, 1, 8, 5, 3, 2, 1),
-	Item_Create("Nano Sword", 100, 2011, 11, 5, 3, 12, 6, 5, 4, 1),
-	Item_Create("Thermal Lance", 130, 2012, 12, 3, 3, 6, 6, 4, 4, 2),
-	Item_Create("Electro Whip", 70, 2013, 13, 2, 2, 20, 7, 1, 2, 1),
-	Item_Create("Proton Axe", 150, 2014, 14, 2, 3, 5, 9, 7, 5, 1),
-	Item_Create("Gauss Rifle", 140, 2015, 15, 3, 2, 7, 8, 3, 3, 2),   
-	Item_Create("Plasma Cannon", 140, 2002, 12, 2, 3, 12, 1, 5, 4, 5)
+	Item_Create("Escudo Andro", 120, 2001, 11, 3, 5, 15, 5, 3, 2, 5),
+	Item_Create("Bomba Eletromagnetica", 140, 2002, 12, 5, 5, 12, 3, 5, 4, 5),
+	Item_Create("Exoesqueleto", 90, 2003, 13, 3, 4, 10, 3, 2, 3, 5),
+	Item_Create("Manopla de Excesso", 100, 2004, 14, 2, 3, 18, 10, 2, 3, 5),
+	Item_Create("Botas Antigravidade", 130, 2005, 2, 3, 15, 13, 3, 4, 5, 5),
+	Item_Create("Foguete XRL8", 80, 2006, 3, 5, 5, 15, 3, 1, 2, 5),
+	Item_Create("Arpao", 150, 2007, 17, 5, 3, 15, 8, 4, 4, 5),
+	Item_Create("Binoculo Andro", 230, 2008, 3, 4, 5, 4, 5, 5, 6, 5),
+	Item_Create("Dispositivo Hacker", 110, 2009, 9, 7, 2, 5, 5, 2, 3, 1),
+	Item_Create("Mochila do Tempo", 90, 2010, 10, 8, 1, 8, 5, 3, 2, 1),
+	Item_Create("Drone Andro", 100, 2011, 11, 5, 3, 12, 6, 5, 4, 1),
+	Item_Create("Material de Aluminio", 130, 2012, 12, 3, 3, 6, 6, 4, 4, 2),
+	Item_Create("Material de Ferro", 70, 2013, 13, 2, 2, 20, 7, 1, 2, 1),
+	Item_Create("Material de Cobra", 150, 2014, 14, 2, 3, 5, 9, 7, 5, 1),
+	Item_Create("Material de Titanio", 140, 2015, 15, 3, 2, 7, 8, 3, 3, 2),   
+	Item_Create("Material de Aco", 140, 2002, 12, 2, 3, 12, 1, 5, 4, 5)
 ];
 
 

@@ -37,6 +37,8 @@ _launch_power = 0;
 _cur_x = 0;
 _cur_y = 0;
 
+_angle = 45;
+
 _move_angle_x = 0;
 _move_angle_y = 0;
 

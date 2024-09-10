@@ -22,10 +22,11 @@ switch(global.ability){
 		}
 		
 		Create_Object_Limit(objController._pos_x, objController._pos_y, objDrone, 1);
+		
+		global.ability = -1;
 
 	break;
 }
-global.ability = -1;
 
 #endregion
 

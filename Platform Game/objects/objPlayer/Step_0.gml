@@ -11,7 +11,7 @@ _point_view = _move;
 
 _move_y += (_grv - global.jumping);
 
-_shoot_countdown -= 1;
+_shoot_countdown--;
 
 var _dir = sign(mouse_x - x);
 image_xscale = _dir;
@@ -127,10 +127,6 @@ if(_up){
 
 if(_down){
 	_move_angle_y++;	
-}
-
-if(point_in_circle(mouse_x, mouse_y, _cur_x, _cur_y, 20)){
-	show_message("TOCOU no Player");
 }
 
 
