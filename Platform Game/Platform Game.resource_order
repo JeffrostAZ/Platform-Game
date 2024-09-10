@@ -73,6 +73,7 @@
     {"name":"building_7","order":6,"path":"sprites/building_7/building_7.yy",},
     {"name":"sprEnemyRedWhite","order":4,"path":"sprites/sprEnemyRedWhite/sprEnemyRedWhite.yy",},
     {"name":"spr_status_btn_02","order":2,"path":"sprites/spr_status_btn_02/spr_status_btn_02.yy",},
+    {"name":"objRope","order":5,"path":"objects/objRope/objRope.yy",},
     {"name":"rm_world_04","order":6,"path":"rooms/rm_world_04/rm_world_04.yy",},
     {"name":"objEnemy","order":1,"path":"objects/objEnemy/objEnemy.yy",},
     {"name":"building_6","order":5,"path":"sprites/building_6/building_6.yy",},

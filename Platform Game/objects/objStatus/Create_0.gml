@@ -2,8 +2,6 @@ enum BASEATRIBUTES {
 	FORCA,
     VELOCIDADE,
     SORTE,
-    DEFESA,
-    ATAQUE,
 	LENGTH
 }
 
@@ -11,10 +9,7 @@ enum BASEATRIBUTES {
 global.status_buttons = [
     ["STR", 1],
     ["AGI", 1],
-    ["LUK", 1],
-    ["DEF", 1],
-    ["ATK", 1],
-    ["VATK", 1],
+    ["LUK", 1]
 ];
 
 // Obtém a câmera ativa

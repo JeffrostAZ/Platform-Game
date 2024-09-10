@@ -26,6 +26,13 @@ switch(global.ability){
 		global.ability = -1;
 
 	break;
+	case 3:
+	
+		instance_create_depth(0, 0, depth, objRope);
+		
+		global.ability = -1;
+
+	break;
 }
 
 #endregion
@@ -45,6 +52,12 @@ if(keyboard_check_pressed(ord("2"))){
 if(keyboard_check_pressed(ord("3"))){
 	global.ability = 2;	
 }
+
+if(keyboard_check_pressed(ord("4"))){
+	global.ability = 3;	
+}
+
+
 	
 #endregion
 

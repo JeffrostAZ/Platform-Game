@@ -98,6 +98,7 @@
     {"id":{"name":"building_7","path":"sprites/building_7/building_7.yy",},},
     {"id":{"name":"sprEnemyRedWhite","path":"sprites/sprEnemyRedWhite/sprEnemyRedWhite.yy",},},
     {"id":{"name":"spr_status_btn_02","path":"sprites/spr_status_btn_02/spr_status_btn_02.yy",},},
+    {"id":{"name":"objRope","path":"objects/objRope/objRope.yy",},},
     {"id":{"name":"rm_world_04","path":"rooms/rm_world_04/rm_world_04.yy",},},
     {"id":{"name":"objEnemy","path":"objects/objEnemy/objEnemy.yy",},},
     {"id":{"name":"building_6","path":"sprites/building_6/building_6.yy",},},

@@ -56,9 +56,6 @@ _max_health_status = 0;
 _str_status = 0;
 _agi_status = 0;
 _luk_status = 0;
-_def_status = 0;
-_atk_status = 0;
-_shoot_frequency_status = 0;
 
 #endregion
 
@@ -68,9 +65,6 @@ _max_health_item_status = 0;
 _str_item_status = 0;
 _agi_item_status = 0;
 _luk_item_status = 0;
-_def_item_status = 0;
-_atk_item_status = 0;
-_shoot_frequency_item_status = 0;
 
 #endregion
 
@@ -83,12 +77,9 @@ _str = 2;
 _agi = 3;
 _luk = 5;
 _jump = -1;
-_def = 5;
-_atk = 15;
-_shoot_spd = 60;
-_shoot_frequency = 10;
 _pos_x = 0;
 _pos_y = 0;
+_item_level = 1;
 #endregion
 
 

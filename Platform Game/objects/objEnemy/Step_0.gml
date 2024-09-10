@@ -43,7 +43,7 @@ if (place_meeting(x, y + _move_y, objCollision)) {
 
 #region Collision Projetil
 if (place_meeting(x, y, objProjectil)) {
-	_health -= objController._atk;
+	_health -= 5;
 	instance_destroy(objProjectil.id);
 }
 

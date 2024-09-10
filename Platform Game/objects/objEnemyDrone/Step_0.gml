@@ -5,12 +5,12 @@ if (_follow == -1) {
     _time_since_last_move++;
 
     // Distância até o jogador
-    var _player_dist = point_distance(x, y, _player.x, _player.y);
+    var _player_dist = point_distance(x, y, _player._pos_x, _player._pos_y);
 
     // Se o jogador estiver perto, o inimigo deve seguir lentamente
     if (_player_dist < 500) {  // 500 é o alcance de detecção
         // Move-se em direção ao jogador suavemente
-        move_towards_point(_player.x, _player.y, 2); // Mova a uma velocidade de 2 pixels por step
+        move_towards_point(_player._pos_x, _player._pos_y, 2); // Mova a uma velocidade de 2 pixels por step
         _state = "atacar";
     } else {
         // Se o jogador estiver fora de alcance, entra no estado de "rondar"
@@ -39,4 +39,6 @@ if (_follow == -1) {
         }
     }
 }
+
+
 #endregion

@@ -61,13 +61,11 @@ if (global._item_menu == 1){
 			draw_text(350 - 50, 720, "Strength");
 			draw_text(350 - 50, 750, "Agility");
 			draw_text(350 - 50, 780, "Health");
-			draw_text(350 - 50, 810, "Damage");
 		
 			draw_set_color(c_red);
 			draw_text(350 + 80, 720, global.items[_item][ATRIBUTES.FORCA]);
 			draw_text(350 + 80, 750, global.items[_item][ATRIBUTES.VELOCIDADE]);
 			draw_text(350 + 80, 780, global.items[_item][ATRIBUTES.VIDA]);
-			draw_text(350 + 80, 810, global.items[_item][ATRIBUTES.ATAQUE]);
 			
             global._card_size[_i] = min(global._card_size[_i] + 0.05, 0.05);
             global._card_alpha[_i] = min(global._card_alpha[_i] + 0.5, 0.05);

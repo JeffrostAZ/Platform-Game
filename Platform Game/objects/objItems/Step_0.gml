@@ -13,178 +13,138 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];		
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 			
 		break;
 	
 			case 1:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];	
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];		
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 
 		break;
 	
 			case 2:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];		
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];		
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
 
 		break;
 	
 			case 3:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];	
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];		
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
-			
 
 		break;
 	
 			case 4:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];		
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];	
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
-
 
 		break;
 	
 			case 5:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];		
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];	
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
-
 
 		break;
 	
 			case 6:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];	
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];		
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
-
 
 		break;
 	
 			case 7:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];		
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];		
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
-
 
 		break;
 	
 			case 8:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];		
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
-
 
 		break;
 	
 			case 9:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];		
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
-
 
 		break;
 	
 			case 10:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];		
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
-
 
 		break;
 	
 			case 11:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];		
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
-
 
 		break;
 	
 			case 12:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];
+				objController._item_level += global.items[_item][ATRIBUTES.LEVEL];		
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
-
 
 		break;
 	
 			case 13:
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
-				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
+				objController._luk += global.items[_item][ATRIBUTES.SORTE];	
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
-				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
-
 
 		break;
 	
@@ -192,8 +152,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -205,8 +163,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -218,8 +174,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -231,8 +185,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -244,8 +196,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -257,8 +207,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -270,8 +218,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -283,8 +229,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -296,8 +240,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -309,8 +251,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -321,8 +261,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -333,8 +271,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -345,8 +281,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -357,8 +291,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -369,8 +301,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -381,8 +311,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];
@@ -393,8 +321,6 @@ if(_selected != -1 && global.upgrade == true){
 				objController._str += global.items[_item][ATRIBUTES.FORCA];
 				objController._agi += global.items[_item][ATRIBUTES.VELOCIDADE];
 				objController._luk += global.items[_item][ATRIBUTES.SORTE];			
-				objController._atk += global.items[_item][ATRIBUTES.ATAQUE];
-				objController._def += global.items[_item][ATRIBUTES.DEFESA];
 				objController._max_health += global.items[_item][ATRIBUTES.VIDA];
 				objController._energy += global.items[_item][ATRIBUTES.ENERGIA];
 				objController._shoot_frequency += global.items[_item][ATRIBUTES.VELOCIDADE];

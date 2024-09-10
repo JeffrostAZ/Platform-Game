@@ -10,7 +10,7 @@ _being_attacked = false;
 
 _time_since_last_move = 0;
 // Referência ao personagem principal
-_player = objPlayer;  // Substitua obj_player pelo nome do seu objeto de personagem principal
+_player = objController;  // Substitua obj_player pelo nome do seu objeto de personagem principal
 
 #endregion
 
@@ -25,3 +25,5 @@ _move_end_y = 0;
 _follow = -1; 
 _stop_move = 1;
 _speed = 5;
+
+_was_hited = 0;

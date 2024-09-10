@@ -103,9 +103,16 @@ if(global.ability == 2){
 		_inst.speed = _velocity + 0.3;
 		_shoot_countdown = 100;
 	}
+	
 }
 
-
+if(mouse_check_button_pressed(mb_left)){
+	var _inst = instance_create_depth(x, y, depth, objProjectilTest);
+	var _dir = point_direction(x, y, mouse_x, mouse_y);
+	_inst.direction = _dir;
+	_inst._gravity = 0.5;
+	_inst.speed = 10 + 0.3;
+}
 #endregion
 
 

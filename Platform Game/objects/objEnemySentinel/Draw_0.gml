@@ -6,8 +6,8 @@ var _start_x = x;  // Posição inicial no eixo X (inimigo)
 var _start_y = y;  // Posição inicial no eixo Y (inimigo)
 
 // Definir o ponto final (objPlayer, o alvo)
-var _target_x = objPlayer.x;  // Posição final no eixo X (jogador)
-var _target_y = objPlayer.y;  // Posição final no eixo Y (jogador)
+var _target_x = objController._pos_x;  // Posição final no eixo X (jogador)
+var _target_y = objController._pos_y;  // Posição final no eixo Y (jogador)
 
 // Calcular a distância horizontal e vertical entre o ponto inicial e o alvo
 var _dx = _target_x - _start_x;  // Distância horizontal entre o inimigo e o jogador

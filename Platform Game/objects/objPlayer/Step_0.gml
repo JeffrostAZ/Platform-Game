@@ -69,10 +69,7 @@ _str = objController._str + objController._str_item_status;
 _agi = objController._agi + objController._agi_item_status;
 _luk = objController._luk + objController._luk_item_status;
 _jump = objController._jump;
-_def = objController._def + objController._def_item_status;
-_atk = objController._atk + objController._atk_item_status;
-_shoot_spd = objController._shoot_spd;
-_shoot_frequency = objController._shoot_frequency + objController._shoot_frequency_item_status;
+_item_level = objController._item_level;
 #endregion
 
 #region Death System

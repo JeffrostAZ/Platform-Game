@@ -59,8 +59,5 @@ if (global._item_menu == 1){
         draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 0 * button_spacing + _y_text, string(objController._str_status));
         draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 1 * button_spacing + _y_text, string(objController._agi_status));
         draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 2 * button_spacing + _y_text, string(objController._luk_status));
-        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 3 * button_spacing + _y_text, string(objController._def_status));
-        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 4 * button_spacing + _y_text, string(objController._atk_status));
-        draw_text(_button_value_x + _x_text, _get_camera_y + button_y + 5 * button_spacing + _y_text, string(objController._shoot_frequency_status));
     }
 }
