@@ -21,6 +21,16 @@ if (_follow == -1) {
             }
         }
     }
+	
+	with (objEnemyDrone) {  // Substitua objEnemy pelo nome do seu objeto de inimigo
+        if (!other._being_attacked) {
+            var _dist = point_distance(other.x, other.y, x, y);
+            if (_dist < _nearest_dist) {
+                _nearest_dist = _dist;
+                _nearest_enemy = id;
+            }
+        }
+    }
 
     if (point_distance(objController._pos_x, objController._pos_y, x, y) > 800) {
         _move_init_x = 10;

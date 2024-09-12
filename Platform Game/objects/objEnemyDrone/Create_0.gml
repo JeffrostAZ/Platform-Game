@@ -27,3 +27,10 @@ _stop_move = 1;
 _speed = 5;
 
 _was_hited = 0;
+
+_fixed_pos_x = x;
+_fixed_pos_y = y;
+
+_being_attacked = false;
+
+_health = 10;

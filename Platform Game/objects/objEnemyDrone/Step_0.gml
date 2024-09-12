@@ -8,7 +8,7 @@ if (_follow == -1) {
     var _player_dist = point_distance(x, y, _player._pos_x, _player._pos_y);
 
     // Se o jogador estiver perto, o inimigo deve seguir lentamente
-    if (_player_dist < 500) {  // 500 é o alcance de detecção
+    if (_player_dist <= 300) {  // 300 é o alcance de detecção
         // Move-se em direção ao jogador suavemente
         move_towards_point(_player._pos_x, _player._pos_y, 2); // Mova a uma velocidade de 2 pixels por step
         _state = "atacar";
@@ -31,14 +31,36 @@ if (_follow == -1) {
             var _pos_y = lengthdir_y(_rondar_distance, _rondar_angle);
 
             // Move-se em torno de um ponto fixo (ajuste conforme necessário)
-            var _fixed_x = x;  // O inimigo ronda sua posição atual
-            var _fixed_y = y;  // O inimigo ronda sua posição atual
+            var _fixed_x = _fixed_pos_x;  // O inimigo ronda sua posição atual
+            var _fixed_y = _fixed_pos_y;  // O inimigo ronda sua posição atual
 
             move_towards_point(_fixed_x + _pos_x, _fixed_y + _pos_y, 1); // Move-se lentamente para a posição calculada
             _time_since_last_move = 0;  // Reseta o contador de movimento
         }
     }
-}
+} 
 
 
 #endregion
+
+if(place_meeting(x, y, objProjectil)){
+	_health -= 5;	
+}
+
+if(_health <= 0){
+	global.exp += 10 * (global.level + 2);
+	global.coin += 5 * global.level;
+	
+	var _ammo = irandom(100);
+	
+	if(_ammo <= 10){
+		var _inst = instance_create_layer(x, y, "Controller", objAmmo);
+		_inst.y = y - 64;
+	}
+	
+	instance_create_depth(x, y, depth, objTrash);
+	
+	instance_destroy();
+	
+
+}

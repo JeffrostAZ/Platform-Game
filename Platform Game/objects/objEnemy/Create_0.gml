@@ -1,5 +1,6 @@
 instance_create_layer(x, y, "Controller", objAbilities);
 
+_countdown = 200;
 
 _grv = 0.9;
 
@@ -7,7 +8,7 @@ _sprite_enemy = sprEnemyRed;
 
 _health = global.level * (global.exp / 100) + 10;
 
-_move_x = 0;
+_move_x = 0 
 _move_y = 0;
 
 _speed = 2 + (global.level / 10);
@@ -37,5 +38,7 @@ _move = false;
 _follow = 1; 
 _stop_move = 1;
 _speed_to_target = 5;
+
+
 
 #endregion

@@ -30,7 +30,6 @@ if(_scroll >= 1975 ){
 	_scroll = -1725;	
 }
 
-show_debug_message(_scroll);
 
 if (global._item_menu == 1){
     for (var _i = 0; _i < _num_buttons; _i++) {
@@ -48,6 +47,8 @@ if (global._item_menu == 1){
         draw_text(_button_x + (_button_width / 2) - 150, _button_y - 75, global.items[_item][0]);
 		draw_set_color(c_yellow);
 		draw_text(_button_x + (_button_width / 2) - 100, _button_y - 35, string(global.items[_item][1]) + string("$"));
+		
+
 		
 		//botão de compra
 		var _compra_pos = 250;

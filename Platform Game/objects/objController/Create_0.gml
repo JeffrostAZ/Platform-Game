@@ -31,11 +31,11 @@ global.jumping = 0;
 global.follow = false;
 global.size = 0;
 global.world = 1;
-global.drone_bullet = 50;
+global.drone_bullet = 100;
 global.state = "rondar";
 global.room_change = 0;
-global.blocks = 10;
-global.ability_select = -1;
+global.blocks = 50;
+global.trash = 0;
 #endregion
 
 #region Elements

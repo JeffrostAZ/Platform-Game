@@ -1,5 +1,31 @@
 //move_towards_point(objPlayer.x, y, 3);
-_move_x = sign(objController._pos_x - x);
+
+// Reduz o tempo de contagem do movimento
+_countdown--;
+
+// Define a distância até o jogador (ou outro alvo)
+var _enemy_dist = point_distance(x, y, objController._pos_x, objController._pos_y);
+
+// Verifica se o inimigo está a uma distância próxima do jogador (300 unidades)
+if (_enemy_dist <= 300) {
+    // Move em direção ao jogador
+    _move_x = sign(objController._pos_x - x);
+} else {
+    // Se o inimigo não está próximo ao jogador, ronda o ambiente
+    if (_countdown <= 0) {
+        // Muda aleatoriamente a direção a cada intervalo de tempo (_countdown)
+        _move_x = choose(-1, 1);  // Direção aleatória (esquerda ou direita)
+        _countdown = 200;         // Reseta o tempo de contagem para o próximo movimento
+    }
+}
+
+
+// Verifica colisão com as paredes (objCollision)
+if (place_meeting(x + _move_x * 2, y, objCollision)) {
+    // Inverte a direção se houver colisão
+    _move_x = -_move_x;
+}
+
 
 _move_y += _grv;
 
@@ -82,7 +108,11 @@ if(_health <= 0){
 		_inst.y = y - 64;
 	}
 	
+	instance_create_depth(x, y, depth, objTrash);
+	
 	instance_destroy();
+	
+
 }
 
 

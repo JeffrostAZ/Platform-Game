@@ -1,5 +1,6 @@
 instance_create_layer(x, y, "Controller", objAbilities);
 
+_countdown = 200;
 
 _grv = 0.9;
 
