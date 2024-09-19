@@ -19,6 +19,7 @@ _shoot_spd = 5;
 
 _pos = 0;
 _count = 1;
+
 #region
 
 // Variáveis de controle

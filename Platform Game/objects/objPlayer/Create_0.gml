@@ -54,3 +54,8 @@ alarm[0] = 60 * 0.4;
 
 _animation = 0;
 _idle = 1;
+
+_spr_ability = spr_waiting;
+
+_spr_a_pos_x = x;
+_spr_a_pos_y = y;

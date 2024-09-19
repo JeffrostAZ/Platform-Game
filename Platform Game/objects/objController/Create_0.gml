@@ -15,7 +15,7 @@ _room_growth = 0;
 
 #region Global Variables
 global.items = [];
-global.ability = 0;
+global.ability = -1;
 global.status_buttons = [];
 global.coin = 500000;
 global.level = 1;

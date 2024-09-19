@@ -115,4 +115,11 @@ if(mouse_check_button_pressed(mb_left)){
 }
 #endregion
 
+#region Abilities Sprite
 
+_spr_a_pos_x = x;
+_spr_a_pos_y = y;
+
+draw_sprite(_spr_ability, 0, _spr_a_pos_x, _spr_a_pos_y );
+
+#endregion

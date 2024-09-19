@@ -18,7 +18,9 @@ image_xscale = _dir;
 
 #region Jumping
 if (place_meeting(x, y + 1, objCollision) && _key_up && global.jumping < 0.5) {
-    _move_y = -15;
+    _move_y = -15 - _jump;
+	
+	objController._jump = 0;
 }
 
 #endregion

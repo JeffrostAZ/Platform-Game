@@ -116,6 +116,5 @@ if(_health <= 0){
 }
 
 
-
 x += _move_x;
 y += _move_y; 
