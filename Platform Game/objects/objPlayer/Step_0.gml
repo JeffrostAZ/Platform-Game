@@ -13,6 +13,8 @@ _move_y += (_grv - global.jumping);
 
 _shoot_countdown--;
 
+_counting += 0.4;
+
 var _dir = sign(mouse_x - x);
 image_xscale = _dir;
 

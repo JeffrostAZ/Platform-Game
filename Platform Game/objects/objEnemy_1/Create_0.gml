@@ -38,4 +38,6 @@ _follow = 1;
 _stop_move = 1;
 _speed_to_target = 5;
 
+_idle = 1;
+
 #endregion

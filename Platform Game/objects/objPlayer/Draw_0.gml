@@ -1,4 +1,13 @@
-draw_self();
+if(_move_x == 0){
+	
+	draw_sprite_ext(sprPlayerStanding, _counting, x, y, _last_idle, 1, 0, c_white, 1);
+	
+} else {
+	
+	draw_sprite_ext(sprPlayerRunning, _counting / 2.5, x, y, sign(_move_x), 1, 0, c_white, 1);
+	_last_idle = sign(_move_x);
+	
+}
 
 #region Shield
 
@@ -94,14 +103,14 @@ if(global.ability == 2){
 
 	_cur_x = _current_x;
 	_cur_y = _current_y;
-	var _enemy = objEnemyDrone;
-
-	if(point_in_circle(_enemy.x, _enemy.y, _cur_x, _cur_y, 50) && _shoot_countdown <= 0){
-		var _inst = instance_create_depth(x, y, depth, objProjectilTest);
-		_inst.direction = _angle;
-		_inst._gravity = _gravity_force;
-		_inst.speed = _velocity + 0.3;
-		_shoot_countdown = 100;
+	with (objEnemyDrone) {
+	    if (point_in_circle(x, y, _cur_x, _cur_y, 50) && other._shoot_countdown <= 0) {
+	        var _inst = instance_create_depth(other.x, other.y, other.depth, objProjectilTest);
+	        _inst.direction = other._angle;
+	        _inst._gravity = other._gravity_force;
+	        _inst.speed = other._velocity + 0.3;
+	        other._shoot_countdown = 100;
+	    }
 	}
 	
 }

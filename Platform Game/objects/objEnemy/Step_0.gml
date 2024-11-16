@@ -19,6 +19,12 @@ if (_enemy_dist <= 300) {
     }
 }
 
+if(_move_x != 0){
+	image_xscale = _move_x * -1;
+	_idle = choose(1, -1);
+} else {
+	image_xscale = _idle;
+}
 
 // Verifica colisão com as paredes (objCollision)
 if (place_meeting(x + _move_x * 2, y, objCollision)) {

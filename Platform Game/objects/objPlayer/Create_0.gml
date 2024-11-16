@@ -2,7 +2,8 @@ instance_create_layer(0, 0, "Controller", objAbilities);
 
 _grv = 0.9;
 
-
+_counting = 0;
+_last_idle = 1;
 
 #region Attributes
 

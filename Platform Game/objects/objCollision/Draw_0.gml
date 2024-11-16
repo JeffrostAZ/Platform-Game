@@ -1,14 +1,15 @@
 draw_self();
-
-if(point_in_rectangle(mouse_x, mouse_y, x ,y - 64, x + 64, y)){
+draw_set_color(c_white);
+#region Desenha a caixa de local de criar blocos
+//if(point_in_rectangle(mouse_x, mouse_y, x ,y - 64, x + 64, y)){
 	
-	if(_pos > 300){
-		draw_set_color(c_lime);
-		draw_rectangle(x, y - 64, x + 64, y, 1);
-	} else {
-		draw_set_color(c_red);
-		draw_rectangle(x, y - 64, x + 64, y, 1);
-	}
+//	if(_pos > 300){
+//		draw_set_color(c_lime);
+//		draw_rectangle(x, y - 64, x + 64, y, 1);
+//	} else {
+//		draw_set_color(c_red);
+//		draw_rectangle(x, y - 64, x + 64, y, 1);
+//	}
 	
 	
 	
@@ -43,6 +44,5 @@ if(point_in_rectangle(mouse_x, mouse_y, x ,y - 64, x + 64, y)){
 	//	file_text_close(_file);
 
 	//}
-}
-	
-draw_set_color(c_white);
+//}
+#endregion
